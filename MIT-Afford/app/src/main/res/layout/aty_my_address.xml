@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_RlyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/topleft_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_address"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/my_address_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip_6"
+            android:padding="@dimen/dip_10"
+            android:text="@string/my_edit"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bottom_btn_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/btn_red_exit"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_15"
+        android:paddingTop="@dimen/dip_15"
+        android:text="@string/my_new_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/confirm_title" />
+
+    <com.dashihui.afford.thirdapi.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_btn_addr"
+        android:layout_below="@id/top_RlyTitle"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/lyt_noAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/myshippingadress_btn_noaddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_20"
+            android:gravity="center"
+            android:text="@string/my_noaddress"
+            android:textColor="@color/afford_goodsname"
+            android:textSize="@dimen/size14" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:gravity="center"
+            android:text="@string/my_addaddress"
+            android:textColor="@color/afford_goodsname"
+            android:textSize="@dimen/size14" />
+
+    </LinearLayout>
+</RelativeLayout>

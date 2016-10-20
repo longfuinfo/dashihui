@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.shop.AtyAffordShopDetail">
+    <com.dashihui.afford.ui.widget.WgtDragLayout
+        android:id="@+id/draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail_bottom">
+
+        <FrameLayout
+            android:id="@+id/first_framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/second_framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </com.dashihui.afford.ui.widget.WgtDragLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/detail_shopcart"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/join_server"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:text="@string/server_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <ImageButton
+            android:id="@+id/left_ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dip_16"
+            android:src="@drawable/btn_back_detail" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<resources>
+    <!--高度-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="vertical_margin">8dp</dimen>
+    <!--顶部箭头右边padding -->
+    <dimen name="top_drawable_padding">6dp</dimen>
+    <!--顶部标题栏高度 -->
+    <dimen name="top_height">50dp</dimen>
+    <dimen name="top_height_1080P">55dp</dimen>
+    <!--顶部箭头右边padding -->
+    <dimen name="top_padding">26dp</dimen>
+    <!--顶部标题栏字体-->
+    <dimen name="top_font">18sp</dimen>
+    <dimen name="top_font_1080P">22sp</dimen>
+    <!-- 首页图标顶部距离 -->
+    <dimen name="home_ico_margin_top">24dp</dimen>
+    <dimen name="home_ico_margin_right">16dp</dimen>
+
+    <!-- 首页字体距离边距 -->
+    <dimen name="home_font_margin">16dp</dimen>
+
+    <!--顶部轮播图高度 -->
+    <dimen name="top_home">140dp</dimen>
+    <dimen name="top_viewpage">105dp</dimen>
+    <dimen name="top_viewpage_detail">210dp</dimen>
+    <dimen name="top_viewpage_serverdetail">210dp</dimen>
+    <!--<dimen name="top_viewpage_detail">10dp</dimen>-->
+    <!--便利店header高度-->
+    <dimen name="afford_header_lyt_height">130dp</dimen>
+    <!--便利店推荐栏 图片的宽、高-->
+    <dimen name="afford_recomend_goodspic_width">80dip</dimen>
+    <dimen name="afford_recomend_goodspic_height">80dip</dimen>
+    <!--便利店限量、1元购栏 图片的宽、高-->
+    <dimen name="afford_limit_goodspic_width">50dip</dimen>
+    <dimen name="afford_limit_goodspic_height">50dip</dimen>
+    <!--便利店推荐、限量、1元购字的背景图片的宽、高-->
+    <dimen name="afford_recomend_bg_height">26dip</dimen>
+    <dimen name="afford_limit_bg_height">26dip</dimen>
+    <dimen name="afford_onebuy_bg_height">26dip</dimen>
+
+    <!--gridview 的高度 -->
+    <dimen name="gridview_item_height">175dp</dimen>
+    <!--个人中心顶部高度-->
+    <dimen name="my_header_height">180dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btn_height">48dip</dimen>
+    <!-- editView字体paddingLeft -->
+    <!--alert_dialog-->
+    <dimen name="alert_dialog_width">296dp</dimen>
+    <dimen name="edit_pleft">12dp</dimen>
+    <dimen name="edit_minHeight">48dip</dimen>
+    <dimen name="dip_260">260dip</dimen>
+    <dimen name="dip_130">130dip</dimen>
+    <dimen name="dip_120">120dip</dimen>
+    <dimen name="dip_106">106dip</dimen>
+    <dimen name="dip_102">102dip</dimen>
+    <dimen name="dip_100">100dip</dimen>
+    <dimen name="dip_95">95dip</dimen>
+    <dimen name="dip_90">90dip</dimen>
+    <dimen name="dip_82">82dip</dimen>
+    <dimen name="dip_80">80dip</dimen>
+    <dimen name="dip_73">73dip</dimen>
+    <dimen name="dip_77">77dip</dimen>
+    <dimen name="dip_71">71dip</dimen>
+    <dimen name="dip_70">70dip</dimen>
+    <dimen name="dip_67">67dip</dimen>
+    <dimen name="dip_65">65dip</dimen>
+    <dimen name="dip_60">60dip</dimen>
+    <dimen name="dip_58">58dip</dimen>
+    <dimen name="dip_55">55dip</dimen>
+    <dimen name="dip_53">53dip</dimen>
+    <dimen name="dip_50">50dip</dimen>
+    <dimen name="dip_48">48dip</dimen>
+    <dimen name="dip_52">52dip</dimen>
+    <dimen name="dip_45">45dip</dimen>
+    <dimen name="dip_40">40dip</dimen>
+    <dimen name="dip_38">38dip</dimen>
+    <dimen name="dip_36">36dip</dimen>
+    <dimen name="dip_35">35dip</dimen>
+    <dimen name="dip_32">32dip</dimen>
+    <dimen name="dip_30">30dip</dimen>
+    <dimen name="dip_28">28dip</dimen>
+    <dimen name="dip_27">27dip</dimen>
+    <dimen name="dip_26">26dip</dimen>
+    <dimen name="dip_25">25dip</dimen>
+    <dimen name="dip_24">24dip</dimen>
+    <dimen name="dip_22">22dip</dimen>
+    <dimen name="dip_20">20dip</dimen>
+    <dimen name="dip_19">19dip</dimen>
+    <dimen name="dip_18">18dip</dimen>
+    <dimen name="dip_17">17dip</dimen>
+    <dimen name="dip_16">16dip</dimen>
+    <dimen name="dip_15">15dip</dimen>
+    <dimen name="dip_14">14dip</dimen>
+    <dimen name="dip_13">13dip</dimen>
+    <dimen name="dip_12">12dip</dimen>
+    <dimen name="dip_11">11dip</dimen>
+    <dimen name="dip_10">10dip</dimen>
+    <dimen name="dip_9">9dip</dimen>
+    <dimen name="dip_8">8dip</dimen>
+    <dimen name="dip_7">7dip</dimen>
+    <dimen name="dip_6">6dip</dimen>
+    <dimen name="dip_5">5dip</dimen>
+    <dimen name="dip_4">4dip</dimen>
+    <dimen name="dip_3">3dip</dimen>
+    <dimen name="dip_2">2dip</dimen>
+    <dimen name="dip_1">1dip</dimen>
+    <dimen name="dip_0.5">0.5dip</dimen>
+    <!--字体-->
+    <!-- 顶部标题 -->
+    <dimen name="title_top">18sp</dimen>
+    <dimen name="title_top_1080P">22sp</dimen>
+    <!-- 首页 -->
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="home_title1">18sp</dimen>
+    <dimen name="home_title2">16sp</dimen>
+    <dimen name="home_title3">14sp</dimen>
+    <dimen name="home_title4">12sp</dimen>
+    <!-- editView字体的大小 -->
+    <dimen name="edit_size">16sp</dimen>
+    <dimen name="size10">10sp</dimen>
+    <dimen name="size11">11sp</dimen>
+    <dimen name="size12">12sp</dimen>
+    <dimen name="size13">13sp</dimen>
+    <dimen name="size14">14sp</dimen>
+    <dimen name="size15">15sp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="size17">17sp</dimen>
+    <dimen name="size18">18sp</dimen>
+    <dimen name="size20">20sp</dimen>
+    <dimen name="size22">22sp</dimen>
+    <dimen name="size26">26sp</dimen>
+    <!--dialog字体的大小 -->
+    <dimen name="alert_dialog_msg_height">50dp</dimen>
+    <dimen name="alert_dialog_btn_height">48dp</dimen>
+
+    <!--定位页字体大小-->
+    <dimen name="loc_city">16sp</dimen>
+    <dimen name="loc_cityname">16sp</dimen>
+    <!--定位附近小区页字体大小-->
+    <dimen name="loc_nearby_community">16sp</dimen>
+    <dimen name="loc_nearby_community_name">14sp</dimen>
+    <dimen name="loc_nearby_community_name_1080p">18sp</dimen>
+    <dimen name="loc_nearby_community_address">12sp</dimen>
+    <!--确认订单页字体大小-->
+    <dimen name="confirmorder_title">16sp</dimen>
+    <dimen name="confirmorder_content">14sp</dimen>
+    <dimen name="confirmorder_content_1080P">18sp</dimen>
+    <dimen name="confirmorder_hint">12sp</dimen>
+
+    <!--确认交易页字体大小-->
+    <dimen name="confirm_title">16sp</dimen>
+    <dimen name="confirm_textview">14sp</dimen>
+    <dimen name="confirm_hint">12sp</dimen>
+
+    <!--微信已支付未送货页字体大小-->
+    <dimen name="confirm_paydone_title">16sp</dimen>
+    <dimen name="confirm_paydone_textview">14sp</dimen>
+    <dimen name="confirm_paydone_hint">12sp</dimen>
+
+    <!--微信支付已送货页字体大小-->
+    <dimen name="confirm_done_title">16sp</dimen>
+    <dimen name="confirm_done_textview">14sp</dimen>
+    <dimen name="confirm_done_hint">12sp</dimen>
+
+    <!--购物车 -->
+    <dimen name="shopCart_msg_height">125dp</dimen>
+    <dimen name="shopCart_img_height">128dp</dimen>
+    <dimen name="shopCart_home_height">113dp</dimen>
+    <!--购物车没有物品时字体大小-->
+    <dimen name="shopcart_going">16sp</dimen>
+    <dimen name="shopcart_noshopping">14sp</dimen>
+    <dimen name="shopping_bottom_width">246dp</dimen>
+    <dimen name="shopping_bottom_height">56dp</dimen>
+    <dimen name="shopping_bottom_joinshop_width">114dp</dimen>
+
+    <!--未登录个人中心头像大小-->
+    <dimen name="personal_unlogin_userpic">80dp</dimen>
+    <dimen name="personal_paddingLR">12dp</dimen>
+    <!--未登录个人中心字体-->
+    <dimen name="personal_textview">14sp</dimen>
+    <dimen name="personal_texthint">12sp</dimen>
+
+    <!--搜索-->
+    <dimen name="search_cut">8dp</dimen>
+    <dimen name="search_font">17sp</dimen>
+
+    <!--登录个人中心字体-->
+    <dimen name="personal_login_textview">14sp</dimen>
+    <dimen name="personal_login_texthint">12sp</dimen>
+    <dimen name="personal_browse">10sp</dimen>
+
+    <!--便利店点击顶部弹出底部菜单页文字字体-->
+    <!--便利店点击顶部弹出底部菜单页文字字体-->
+    <dimen name="topdialog_fonts">14sp</dimen>
+    <!--服务-->
+    <dimen name="server_titlepic">185dp</dimen>
+    <!--我的门店-->
+    <dimen name="mystore_titlepic">206dp</dimen>
+
+    <!--便利店顶部菜单-->
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="expand_tab_item_height">45dp</dimen>
+    <dimen name="expand_tab_eara_height">380dp</dimen>
+    <dimen name="head_bar_height">45dp</dimen>
+
+    <!-- 订单详情-->
+    <dimen name="orderDetail">16sp</dimen>
+    <dimen name="orderDetail_1080p">16sp</dimen>
+
+</resources>

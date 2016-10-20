@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_16"
+            android:drawableLeft="@drawable/stat_sys_download"
+            android:drawablePadding="@dimen/dip_10"
+            android:text="@string/dialog_title"
+            android:textColor="@color/cor1"
+            android:textSize="@dimen/size20" />
+        <View
+            android:id="@+id/dialog_line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:background="@color/confirmorder_line" />
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_20"
+            android:layout_below="@id/dialog_title"
+            android:gravity="left"
+            android:text="确定要退出吗？"
+            android:textColor="@color/cor1"
+            android:textSize="@dimen/size16" />
+
+        <View
+            android:id="@+id/dialog_line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:layout_marginBottom="@dimen/dip_16"
+            android:background="@color/confirmorder_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/dialog_left_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/alert_dialog_btn_height"
+                android:layout_weight="1"
+                android:layout_below="@id/dialog_message"
+                android:background="@drawable/btn_dialog_bg"
+                android:paddingLeft="@dimen/dip_32"
+                android:paddingRight="@dimen/dip_32"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/dip_10"
+                android:text="取消"
+                android:textColor="@color/cor1"
+                android:textSize="@dimen/size16" />
+            <Button
+                android:id="@+id/dialog_right_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/alert_dialog_btn_height"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dialog_message"
+                android:background="@drawable/btn_style_one"
+                android:paddingLeft="@dimen/dip_32"
+                android:paddingRight="@dimen/dip_32"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

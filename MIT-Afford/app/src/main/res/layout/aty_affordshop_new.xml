@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.shop.AtyAffordShop">
+
+    <include layout="@layout/merge_top_search_real" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_48"
+        android:background="@drawable/affordshop_detail_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/afford_all"
+            android:textColor="@color/afford_all"
+            android:textSize="@dimen/size14" />
+
+        <include layout="@layout/line_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/afford_price"
+            android:textColor="@color/afford_all"
+            android:textSize="@dimen/size14" />
+        <include layout="@layout/line_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/afford_sales"
+            android:textColor="@color/afford_all"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+
+    <com.dashihui.afford.ui.widget.WgtGridViewWithHeaderAndFooter
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/trade_title_bar"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dip_5"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dip_5" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+
+    <item Android:drawable="@drawable/store_arrow_dow" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/store_arrow_up" Android:state_checked="true"/>
+ <!-- focused -->
+    <item Android:drawable="@drawable/store_arrow_dow"/>
+ <!-- default -->
+
+</selector>

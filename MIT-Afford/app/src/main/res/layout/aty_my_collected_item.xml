@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:background="@drawable/list_bg_boder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/left_cBoxAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/bg_checked"
+                android:drawablePadding="@dimen/dip_6"
+                android:paddingBottom="@dimen/dip_16"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_16" />
+
+            <LinearLayout
+                android:id="@+id/itemLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/left_img"
+                    android:layout_width="@dimen/dip_90"
+                    android:layout_height="@dimen/dip_90"
+                    android:layout_marginBottom="@dimen/dip_16"
+                    android:layout_marginLeft="@dimen/dip_16"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:layout_marginTop="@dimen/dip_16"
+                    android:background="@drawable/image_border"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_list" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/personal_textview"
+                        android:textSize="@dimen/personal_textview" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dip_5"
+                            android:paddingTop="@dimen/dip_5"
+                            android:text=""
+                            android:textColor="@color/allorder_price"
+                            android:textSize="@dimen/personal_textview" />
+
+                        <TextView
+                            android:id="@+id/tv_oldprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dip_20"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/personal_hinttext"
+                            android:textSize="@dimen/personal_textview" />
+
+                        <ImageButton
+                            android:id="@+id/shopcart_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:background="@color/transparent"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/dip_6"
+                            android:src="@drawable/affordshop_add_shopcart"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

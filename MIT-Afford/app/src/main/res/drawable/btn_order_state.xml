@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:width="@dimen/dip_0.5" android:color="@color/confirmorder_line"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/confirmorder_line"/>
+        </shape>
+    </item>
+</selector>

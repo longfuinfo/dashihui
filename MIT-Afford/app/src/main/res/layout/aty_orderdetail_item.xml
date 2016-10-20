@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_item_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_52"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dip_4"
+        android:paddingLeft="@dimen/dip_12"
+        android:paddingRight="@dimen/dip_12"
+        android:paddingTop="@dimen/dip_4">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地附近"
+            android:textColor="@color/confirmorder_textview"
+            android:textSize="@dimen/loc_nearby_community_name" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="11111"
+            android:textColor="@color/confirmorder_textview"
+            android:textSize="@dimen/loc_nearby_community_name" />
+    </LinearLayout>
+
+    <include layout="@layout/line_view" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goodslyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goodsimg"
+            android:layout_width="@dimen/dip_90"
+            android:layout_height="@dimen/dip_90"
+            android:layout_margin="@dimen/dip_16"
+            android:background="@drawable/home_image_border"
+            android:padding="@dimen/dip_1"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_list" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip_16"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goodsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="[生鲜蔬菜]四川黄柠檬1斤装多汁味鲜美 赶紧抢购"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/dip_5"
+                        android:text="￥1.5元/斤"
+                        android:textColor="@color/allorder_price"
+                        android:textSize="@dimen/personal_textview" />
+
+                    <TextView
+                        android:id="@+id/oldprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="原价￥2.5元/斤"
+                        android:textColor="@color/personal_hinttext"
+                        android:textSize="@dimen/personal_textview" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/shopcart_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/dip_6"
+                    android:src="@drawable/affordshop_add_shopcart" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line_view" />
+</LinearLayout>

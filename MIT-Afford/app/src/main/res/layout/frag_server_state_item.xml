@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_item_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_16"
+        android:paddingBottom="@dimen/dip_16">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dip_5"
+            android:text="本地附近"
+            android:textColor="@color/loc_com_name"
+            android:textSize="@dimen/loc_nearby_community" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="@dimen/dip_16"
+            android:textColor="@color/loc_com_address"
+            android:textSize="@dimen/loc_nearby_community_name" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingBottom="@dimen/dip_10"
+        android:textColor="@color/loc_com_address"
+        android:textSize="@dimen/loc_nearby_community_address"
+        android:visibility="gone"
+        android:paddingRight="@dimen/dip_16"/>
+
+    <include layout="@layout/line_view" />
+</LinearLayout>

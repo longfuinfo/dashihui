@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/server_homemaking"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listView_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlty_top"
+        android:background="@color/defaultBg"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/lyt_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dip_30"
+            android:drawableTop="@drawable/server_list_empty"
+            android:text="@string/server_empty"
+            android:textSize="@dimen/size14" />
+
+        <Button
+            android:id="@+id/btn_toOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_30"
+            android:background="@drawable/btn_order"
+            android:paddingBottom="@dimen/dip_8"
+            android:paddingLeft="@dimen/dip_15"
+            android:paddingRight="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_8"
+            android:text="@string/server_toother"
+            android:textColor="@drawable/btn_order_clicktext"
+            android:textSize="@dimen/personal_texthint" />
+
+    </LinearLayout>
+
+</RelativeLayout>

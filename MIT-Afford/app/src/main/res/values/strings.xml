@@ -1,0 +1,507 @@
+<resources>
+    <string name="app_name">大实惠</string>
+
+    <string name="versionName">2.0.1</string>
+    <!-- 日志是否输出 是否Debug true为开发编译调试，false为发布 -->
+    <string name="debug">false</string>
+
+    <string name="baiKey">gE9iay5IYT4DB7wmyZNdp2SF</string>
+
+    <string name="MTA_KEY">ANE9A1Z3L5NF</string>
+    <!-- 过渡页 -->
+    <string name="app_product">大实惠移动终端™</string>
+    <!-- command key -->
+    <string name="commoncommand">commoncommand</string>
+    <string name="top_right">上街</string>
+    <!-- 首页 -->
+    <string name="title_default">大实惠</string>
+    <string name="home_font1_t1">蔬菜水果</string>
+    <string name="home_font1_t2">有机蔬菜</string>
+    <string name="home_font1_t3">生鲜水果</string>
+
+    <string name="home_font2_t1">酒水饮料</string>
+    <string name="home_font2_t2">经典酒水</string>
+    <string name="home_font2_t3">健康饮料</string>
+
+    <string name="home_font3_t1">生活百货</string>
+    <string name="home_font3_t2">生活用品</string>
+    <string name="home_font3_t3">日用百货</string>
+
+    <string name="home_font4_t1">粮油调料</string>
+    <string name="home_font4_t2">非转基因油</string>
+    <string name="home_font4_t3">厨房调料</string>
+
+    <string name="home_font5_t1">营养早餐</string>
+    <string name="home_font5_t2">营养丰富</string>
+    <string name="home_font5_t3">健康早餐</string>
+
+    <string name="home_no_net">您当前网络不可用，请检查网络设置后重试</string>
+    <string name="home_examine">您当前网络不可用，请检查网络设置后重试</string>
+    <string name="home_net_rep">立即重试</string>
+    <string name="home_more">查看更多</string>
+    <string name="home_recom">精品推荐</string>
+    <string name="home_welcome">立即体验</string>
+
+    <!-- 底部菜单-->
+    <string name="home">首页</string>
+    <string name="affordShop">便利店</string>
+    <string name="shoppingCart">购物车</string>
+    <string name="service">服务</string>
+    <string name="my">我的</string>
+    <!-- 我的-->
+    <string name="back">返回</string>
+    <string name="kName">昵称</string>
+    <string name="userPhone">手机号码</string>
+    <string name="personalCenter">个人中心</string>
+    <string name="myFavorite">我的关注</string>
+    <string name="changePswd">修改密码</string>
+    <string name="currentPswd">当前密码</string>
+    <string name="myMessage">我的消息</string>
+    <string name="feedbackSuggestion">反馈与建议</string>
+    <string name="aboutBgclounds">关于大实惠</string>
+    <string name="shareWith">把大实惠告诉朋友</string>
+    <string name="softwareUpgrade">检测升级</string>
+    <string name="systemSettings">应用设置</string>
+    <string name="loginOut">安全退出</string>
+    <string name="storedetail">我的门店</string>
+    <string name="wallet">我的钱包</string>
+    <string name="my_noaddress">暂无收货地址</string>
+    <string name="my_addaddress">快去添加吧~</string>
+    <string name="my_sharetitle">"下载大实惠APP，即享蔬菜水果、酒水饮料、生活百货0元配送，15分钟到家，快来试试吧~"</string>
+    <string name="my_sharedesc">"大实惠云商服务平台是您家门口的社区E站，不仅提供蔬菜水果、酒水饮料、生活百货、粮油调料、营养早餐的在线购买和线下配送服务，还为小区业主提供家政、洗衣、丽人、洗车、开锁、维修等便捷的到家服务。旨在开启全新的社区便利生活！"</string>
+    <string name="my_shareurl">"http://www.91dashihui.com/share"</string>
+    <!-- 注册 -->
+    <string name="register">注&#160;册</string>
+    <string name="newRegister">新用户注册</string>
+    <string name="nowRegister">立即注册</string>
+    <string name="edithint">请输入手机号</string>
+    <string name="verifybtn">获取验证码</string>
+    <string name="accountNumber">已有账号？</string>
+    <string name="aginBtn">50秒后重新获取</string>
+    <string name="agree"> 我已阅读并同意《大实惠服务条款》</string>
+    <string name="enterVerify">输入验证码</string>
+    <string name="pwd">密&#160;&#160;码</string>
+    <string name="pwd1">确认密码</string>
+    <!-- 登录 -->
+    <string name="login">登&#160;&#160;录</string>
+    <string name="remember">记住账号</string>
+    <string name="autologin">自动登录</string>
+    <string name="nowLogin">立即登录</string>
+    <string name="userName">手机号</string>
+    <string name="userpwd">密&#160;&#160;码</string>
+    <string name="forgetPwd">忘记密码？</string>
+    <string name="invitationCode">邀请码（非必填）</string>
+
+    <!-- 弹出框 -->
+    <string name="dialog_title">提示</string>
+    <!--便利店-->
+    <string name="afford_recommend">推荐</string>
+    <string name="afford_boutique">精品好货</string>
+    <string name="afford_limit">限量</string>
+    <string name="afford_limit_sell">限量发售</string>
+    <string name="afford_onebuy">1元购</string>
+    <string name="afford_alltwo">全部一元</string>
+    <string name="afford_old_goodsprice">￥--</string>
+    <string name="afford_new_goodsprice">￥--</string>
+    <string name="afford_pricetag">￥</string>
+    <string name="default_price">——</string>
+    <string name="afford_all">全部</string>
+    <string name="afford_price">价格</string>
+    <string name="afford_sales">销量</string>
+    <string name="afford_nogoods">很抱歉,商品正在上架中,敬请期待...</string>
+
+    <!--详情页-->
+    <string name="detail_goodsname">正在加载中......</string>
+    <string name="detail_stock">库存</string>
+    <string name="detail_sales">销量</string>
+    <string name="detail_collection">关注</string>
+    <string name="detail_share">分享</string>
+    <string name="detail_evaluate">人</string>
+    <string name="detail_size">规格：</string>
+    <string name="detail_ml">容量：</string>
+    <string name="detail_mldescribe">大实惠云商大实惠云商</string>
+    <string name="detail_brand">品牌：</string>
+    <string name="detail_pic_text">图文详情</string>
+    <string name="detail_param">产品参数</string>
+    <string name="detail_price">￥</string>
+    <string name="detail_left_paren">(</string>
+    <string name="detail_right_paren">)</string>
+    <string name="detail_present">商品介绍：</string>
+    <string name="detail_detail">上拉查看图文详情</string>
+    <string name="detail_down">下拉返回</string>
+
+
+    <!--购物车页-->
+    <string name="shopping_num">0</string>
+    <string name="shopping_noshopping">购物车空空如也，赶紧装满</string>
+    <string name="shopping_going">立即逛逛</string>
+    <string name="shopping_chooseall">全选</string>
+    <string name="shopping_totalmoney">合计：￥0.0</string>
+    <string name="shopping_account">去结算</string>
+    <string name="noAddress">请新建收货地址以确保商品顺利到达</string>
+    <string name="nobrowsing">暂无浏览记录，快去逛逛吧~</string>
+
+
+    <!--定位页-->
+    <string name="location">定位</string>
+    <string name="loc_city">当前城市</string>
+    <string name="loc_community">所选便利店</string>
+    <string name="loc_change_community">切换便利店</string>
+    <string name="loction_err">当前位置暂不可配送，是否仍继续浏览</string>
+    <string name="loction_noerr">无法获取您的定位~</string>
+    <string name="loction_yeserr">请进入设置改为允许大实惠访问您的位置或者手动选择地址</string>
+    <string name="manual">手动选择地址</string>
+    <string name="continueStr">继续访问</string>
+    <string name="choiceConvenienceStore">选择便利店</string>
+    <string name="choice_err">请重新启动应用</string>
+
+
+    <!--定位附近小区页-->
+    <string name="loc_nearby_community">附近便利店</string>
+    <string name="loc_nearby_current">使用当前位置</string>
+    <string name="loc_nearby_community_mi">米</string>
+    <!-- 填写订单 -->
+    <string name="settlementorder">确认订单</string>
+    <string name="settlementsend">配送说明</string>
+    <string name="settlementopen">营业时间</string>
+    <!--确认订单页-->
+    <string name="confirmorder">大实惠收银台</string>
+    <string name="confirmorder_fastlogin">快速登录</string>
+    <string name="confirmorder_contact">联系人：</string>
+    <string name="confirmorder_name">姓名</string>
+    <string name="confirmorder_man">先生</string>
+    <string name="confirmorder_women">女士</string>
+    <string name="confirmorder_phone">电话：</string>
+    <string name="order_phone">手机号：</string>
+    <string name="confirmorder_address">详细地址:</string>
+    <string name="confirmorder_editaddr">楼号/单元/门牌号等详细地址</string>
+    <string name="confirmorder_community">小区：</string>
+    <string name="confirmorder_address_details">楼号-单元-门牌号:(请选择)</string>
+    <string name="confirmorder_address_choose">请选择</string>
+    <string name="confirmorder_payment">选择支付方式</string>
+    <string name="confirmorder_paytype">支付方式</string>
+    <string name="confirmorder_pay_online">在线支付</string>
+    <string name="confirmorder_shop_send">门店配送</string>
+    <string name="confirmorder_deliverypayreceive">配送方式</string>
+    <string name="confirmorder_pay">线上支付</string>
+    <string name="confirmorder_weichatpay">微信支付</string>
+    <string name="confirmorder_alipay">支付宝支付</string>
+    <string name="confirmorder_deliverypay">货到付款</string>
+    <string name="confirmorder_deliverypay1">货到付款（仅支持门店）</string>
+    <string name="confirmorder_deliverytime">送达时间</string>
+    <string name="confirmorder_delivery_store">门店配送</string>
+    <string name="confirmorder_delivery_moment">立即配送</string>
+    <string name="confirmorder_delivery_moment1">（25分钟内送达）</string>
+    <string name="confirmorder_delivery_rightbrace">）</string>
+    <string name="confirmorder_delivery_myself">上门自取（仅支持门店）</string>
+    <string name="confirmorder_delivery_self">上门自取</string>
+    <string name="confirmorder_dialog_cancle">取消</string>
+    <string name="confirmorder_delivery_remark">备注</string>
+    <string name="confirmorder_delivery_remarktext">备注（可选）</string>
+    <string name="confirmorder_supermarket_name">美景天城店</string>
+    <string name="confirmorder_goodsname_nums">*</string>
+    <string name="confirmorder_goodsname_explainprice">-￥</string>
+    <string name="confirmorder_goodsname_price">￥</string>
+    <string name="confirmorder_delivery_money">配送费</string>
+    <string name="confirmorder_allmoney">合计金额：</string>
+    <string name="confirmorder_newuser_favorable">新用户立减</string>
+    <string name="confirmorder_favorable_explain">优惠说明</string>
+    <string name="confirmorder_goods_money">商品金额:</string>
+    <string name="confirmorder_delivery_money1">+配送费</string>
+    <string name="confirmorder_favorable">优惠</string>
+    <string name="confirmorder_stillpay">需付款:</string>
+    <string name="confirmorder_submit_order">提交订单</string>
+    <string name="confirmorder_noaddress">无送货地址</string>
+    <string name="confirmorder_submit">提交订单</string>
+    <string name="confirmorder_totalmoney">实付款：——</string>
+    <string name="confirmorder_mine">大实惠直营</string>
+    <string name="confirmorder_orderremark">订单备注</string>
+    <string name="confirmorder_total">总计</string>
+    <string name="confirmorder_payAndSend">在线支付+第三方配送</string>
+    <string name="confirmorder_takeType">配送方式</string>
+
+
+    <!--我的门店-->
+    <string name="mystore_time">营业时间:</string>
+    <string name="mystore_address">店铺地址：</string>
+    <string name="mystore_username">联系人：</string>
+    <string name="mystore_phone">电话：</string>
+    <string name="mystore_email">邮件：</string>
+    <string name="mystore_sendtime">配送时间:</string>
+    <string name="mystore_senddescripe">配送说明:</string>
+    <!--我的钱包-->
+    <string name="mywallet_title">实惠币</string>
+    <string name="mywallet_shihuibi">我的实惠币</string>
+    <string name="mywallet_content">边存钱，边消费，成为持家小能手</string>
+    <string name="mywallet_good">可购物，可兑换现金，用处多多</string>
+    <string name="mywallet_what">什么是实惠币？</string>
+    <string name="mywallet_details">实惠币是您升级为白金会员后，您消费的每一笔金额，都将转化成不等额的实惠币，1实惠币等于1元人民币，同时您推荐的朋友每消费一笔，也都将为您存下一笔钱，推荐的朋友越多，您的存钱也就越多，边消费边理财的模式，让您成为持家小能手。</string>
+    <!--会员奖励-->
+    <string name="member_title">会员奖励</string>
+    <string name="member_invite">查看分享页，邀请好友注册</string>
+    <string name="share_title">分享</string>
+    <string name="member_share">点击分享给好友</string>
+    <string name="share_exit">抱歉，您暂不满足条件，升级为白金会员后，即可购物返现</string>
+    <!--确认交易-微信支付页文字-->
+    <string name="confirm_mation">确认交易</string>
+    <string name="confirm_third_pay">使用第三方平台支付</string>
+    <string name="confirm_ordernum">订单号：</string>
+    <string name="confirm_price">订单总价：</string>
+    <string name="confirm_getname">收款方</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="confirm_short_money">零用钱不足，去充值</string>
+
+    <!--微信已支付未送货页文字-->
+    <string name="confirm_weipay_title">支付成功</string>
+    <string name="confirm_weipay_delivery_info">配送信息</string>
+    <string name="confirm_weipay_order_submit">订单已提交</string>
+    <string name="confirm_weipay_order_wait">请耐心等待商家确认</string>
+    <string name="confirm_weipay_wait_pay">待支付</string>
+    <string name="confirm_weipay_wait_pay_thirty">请在30分钟内完成支付</string>
+    <string name="confirm_weipay_paydone">已支付，预计</string>
+    <string name="confirm_weipay_paydone1">送达</string>
+    <string name="confirm_weipay_sure_order">商家已确认订单</string>
+    <string name="confirm_weipay_prepare">正在为您准备商品</string>
+    <string name="confirm_weipay_sure">确认送达</string>
+    <string name="confirm_weipay_myself">已上门取货</string>
+    <string name="confirm_weipay_cancel">取消订单</string>
+    <string name="confirm_weipay_urge">催单</string>
+
+    <!--微信支付已送货页文字-->
+    <string name="confirm_weipay_done">大实惠云超市</string>
+    <string name="confirm_weipay_done_info">配送信息</string>
+    <string name="confirm_weipay_done_order">恭喜您！支付成功。</string>
+    <string name="confirm_weipay_done_idea">任何意见和吐槽，请联系我们</string>
+    <string name="confirm_weipay_done_again">再来一单</string>
+    <string name="confirm_weipay_done_evaluate">评价</string>
+
+    <!--个人中心未登录状态文字-->
+    <string name="usercenter_register">登录/注册</string>
+    <string name="usercenter_login_favorible">登录后可享受更多优惠</string>
+    <string name="usercenter_address">我的收货地址</string>
+    <string name="usercenter_collection">我的关注</string>
+    <string name="usercenter_idea">反馈与建议</string>
+    <string name="usercenter_share">分享给朋友</string>
+    <string name="usercenter_index">首页</string>
+    <string name="usercenter_shop">便利店</string>
+    <string name="usercenter_shopcart">购物车</string>
+    <string name="usercenter_serve">服务</string>
+    <string name="set_phone">客服电话：</string>
+    <string name="set_phone_num">0371-86563519</string>
+    <string name="set_server_time">服务时间：9:00—17:30</string>
+
+    <!--个人中心登录状态文字-->
+    <string name="usercenter_login_address">账户管理、收货地址</string>
+    <string name="usercenter_login_attention">关注的商品</string>
+    <string name="usercenter_login_browse">浏览历史</string>
+    <string name="usercenter_login_myorder">我的订单</string>
+    <string name="usercenter_login_allorder">查看全部订单</string>
+    <string name="usercenter_login_waitpay">待付款</string>
+    <string name="usercenter_login_waitreceiv">待收货</string>
+    <string name="usercenter_refund">退款</string>
+    <string name="usercenter_login_waitevaluate">待评价</string>
+    <string name="usercenter_login_give_goods">待发货</string>
+    <string name="usercenter_login_serverorder">服务订单</string>
+    <string name="usercenter_login_server">待服务</string>
+    <string name="usercenter_login_done">已完成</string>
+
+    <!--便利店点击顶部弹出底部菜单页文字-->
+    <string name="topdialog_vegetable">蔬菜水果</string>
+    <string name="topdialog_drinks">酒水饮料</string>
+    <string name="topdialog_lifestyle">生活百货</string>
+    <string name="topdialog_oils">粮油调料</string>
+    <string name="topdialog_breakfast">营养早餐</string>
+    <string name="topdialog_cancel">取&#160;&#160;&#160;&#160;消</string>
+
+    <!--全部订单页文字-->
+    <string name="allorder">全部订单</string>
+    <string name="order_wait_pay">待付款</string>
+    <string name="order_notake">待收货</string>
+    <string name="order_noevaluate">待评价</string>
+    <string name="order_disbursements">实付款：</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_topay">去支付</string>
+    <string name="order_take">确认收货</string>
+    <string name="order_getgood">确认取货</string>
+    <string name="order_urged">催单</string>
+    <string name="order_success">交易完成</string>
+    <string name="order_delete">删除订单</string>
+    <string name="order_countdown">付款剩余时间：</string>
+    <string name="order_track">订单跟踪</string>
+    <string name="order_evaluate">去评价</string>
+    <string name="order_buyagain">再来一单</string>
+    <string name="order_commet">评论</string>
+    <string name="order_total">合计：￥</string>
+    <string name="order_noorder">暂无相关订单~</string>
+
+    <!--服务订单-->
+    <string name="ser_cancel">取消订单</string>
+    <string name="ser_topay">去支付</string>
+    <string name="ser_done">服务完成</string>
+    <string name="ser_urged">催单</string>
+    <string name="ser_delete">删除订单</string>
+    <string name="ser_remark">可选</string>
+
+    <!--错误-->
+    <string name="error">服务器又闹情绪了，程序员要反思！发扬正能量！</string>
+    <!--错误-->
+    <string name="error_network">网络不给力！</string>
+
+    <!--我的账户-->
+    <string name="my_account_title">我的账户</string>
+    <string name="my_account_headimg">头像</string>
+    <string name="my_account_username">用户名</string>
+    <string name="my_account_password">账户密码</string>
+    <string name="my_account_updatepwd">点击修改</string>
+    <string name="my_account_phone">绑定手机号</string>
+    <string name="my_account_address">管理收货地址</string>
+    <string name="my_account_exit">退出当前账户</string>
+
+    <!--我的收货地址-->
+    <string name="my_address">我的收货地址</string>
+    <string name="my_new_address">新增收货地址</string>
+    <string name="my_delete_addr">删除</string>
+    <string name="my_save_addrs">保存并使用</string>
+    <string name="my_save_addr">保存</string>
+    <string name="my_edit">编辑</string>
+    <string name="default_address">默认</string>
+    <string name="default_addr">默认地址</string>
+    <string name="default_explan">注：每次下单时会使用该地址</string>
+    <string name="updata_addr">修改收货地址</string>
+    <string name="updata_save">修改</string>
+    <!--设置-->
+    <string name="setting">设置</string>
+    <string name="setting_aboutour">关于大实惠</string>
+    <string name="setting_update">检测升级</string>
+    <string name="setting_telephone">客服电话：</string>
+    <string name="setting_telephonenums">000-000-0000</string>
+    <string name="setting_time">服务时间：9:00-17:30</string>
+
+    <!--关于大实惠页面-->
+    <string name="about_intimate">贴心实惠  服务到家</string>
+    <string name="about_agreement">用户服务协议</string>
+    <string name="about_welcome">欢迎页</string>
+    <string name="about_copyright">河南大实惠电子商务有限公司版权所有</string>
+    <string name="about_copyright1">Copyright©2015-2015.All Rights Reserved</string>
+
+    <!--我的关注-->
+    <string name="collect">我的关注</string>
+    <string name="collect_edit">编辑</string>
+    <string name="collect_price">原价：</string>
+    <string name="collect_add">加入购物车</string>
+    <string name="collect_delete">取消关注</string>
+    <string name="collected_no">暂无关注商品，快去逛逛吧~</string>
+    <!--特惠专区-->
+    <string name="fav_shopping">立即抢购</string>
+    <string name="fav_limit">限量抢</string>
+    <string name="fav_onebuy">一元购</string>
+
+    <!--配送备注-->
+    <string name="remark_hint">给店家留言，请输入您的需求～</string>
+    <string name="remark_title">配送备注</string>
+    <string name="remark_submit">提交</string>
+
+    <!--选择相册-->
+    <string name="phone_photo">手机相册</string>
+    <string name="camera_photo">相机拍照</string>
+    <string name="camera_cancel">取消</string>
+    <string name="feed_sug">您的评价对我们很重要"\n"请输入您对本次购物的评价"\n"长度为1-500字～</string>
+    <!--反馈与建议-->
+
+    <string name="feed_title">服务反馈</string>
+    <string name="feed_idea">请输入你的意见（500字内）</string>
+    <string name="feed_phone">输入您的邮箱或电话（选填）</string>
+    <!--确认订单地址栏-->
+    <string name="order_build">楼号</string>
+    <string name="order_unit">单元</string>
+    <string name="order_room">门牌号</string>
+    <string name="order_done">完成</string>
+    <!--dialog提示文字-->
+    <string name="delete_dialog">确认删除吗？删除后不可恢复</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_unregister">00000000尚未注册，请指定其他手机号码！</string>
+    <string name="dialog_verup">版本升级！</string>
+    <string name="dialog_newver">检测到新版本！</string>
+    <string name="dialog_later">以后再说</string>
+    <string name="dialog_ok">现在更新</string>
+
+    <!--服务页面-->
+    <string name="server_title">服务</string>
+    <string name="server_phone_coast">话费</string>
+    <string name="server_air_ticket">飞机票</string>
+    <string name="server_updata">维修</string>
+    <string name="server_Beauty">美妆</string>
+    <string name="server_homemaking">家政</string>
+    <string name="server_wash">洗衣</string>
+    <string name="server_teacher">教育</string>
+    <string name="server_money">理财</string>
+    <string name="server_nums">累计服务：</string>
+    <string name="server_price_persent">价格说明:</string>
+    <string name="server_choose">请选择：</string>
+    <string name="server_order">立即预约</string>
+    <string name="server_orderdetail">预约清单</string>
+    <string name="server_jionorder">加入预约</string>
+    <string name="server_booking">预约</string>
+    <string name="server_sureorder">确认订单</string>
+    <string name="server_supermarket_name">大实惠云服务</string>
+    <string name="server_goods_money">服务金额</string>
+    <string name="server_deliverypay">服务后付款</string>
+    <string name="server_deliverytime">服务时间</string>
+    <string name="server_delivery_moment1">2015-12-13（明天）15：00</string>
+    <string name="server_nopay">待支付</string>
+    <string name="server_serno">待服务</string>
+    <string name="server_assess">待评价</string>
+    <string name="server_success">已完成</string>
+    <string name="server_topay">去支付</string>
+    <string name="server_cancel">取消订单</string>
+    <string name="server_delete">删除订单</string>
+    <string name="server_paymoney">实付款</string>
+    <string name="server_sure">确认选择</string>
+    <string name="server_wait">确认服务</string>
+    <string name="server_nearshops">附近商家</string>
+    <string name="server_surged">催  单</string>
+    <string name="server_done">服务完成</string>
+    <string name="server_empty">附近暂无该类商家</string>
+    <string name="server_toother">逛逛其他</string>
+    <!--搜索页面-->
+    <string name="search_title">搜索</string>
+    <string name="search_zonghe">综合</string>
+    <string name="search_sell">销量</string>
+    <string name="search_self">大实惠直营</string>
+    <string name="search_price">价格</string>
+    <string name="search_hint">天天都实惠</string>
+    <string name="search_nohistory">没有搜索结果</string>
+    <string name="search_again">换个关键词试试吧</string>
+
+    <!--营养早餐-->
+    <string name="breakfast_title">营养早餐</string>
+    <string name="serverShopping">预约服务订单</string>
+
+    <!--家政-->
+    <string name="home_clean">保洁服务</string>
+    <string name="home_day">日常保洁</string>
+    <string name="home_deep">深度保洁</string>
+    <string name="home_item">服务项目</string>
+    <string name="home_area">服务范围</string>
+    <string name="home_rule">服务标准</string>
+    <string name="home_cleaner">清洁剂</string>
+    <string name="home_textremark">(选填)</string>
+    <string name="home_totalmoney">总计：</string>
+    <string name="home_submit">提交订单</string>
+    <string name="home_choosetime">请选择服务时间</string>
+    <string name="home_cleaner_hint">大实惠提供清洁剂（+5元/小时）</string>
+    <string name="home_remark">注：最终收费按实际情况计算</string>
+    <string name="home_deep_remark">注：四居室以上最终收费按实际面积计算</string>
+
+    <!-- 订单 -->
+    <string name="order_detail">订单详情</string>
+    <string name="order_state">订单状态</string>
+    <string name="order_trace">订单跟踪</string>
+    <string name="order_refund">退款</string>
+    <string name="order_comment">评价</string>
+
+    <!--便利店顶部菜单-->
+    <string name="no_data">没有找到符合条件的</string>
+    <string name="title_activity_aty_net_work">AtyNetWork</string>
+</resources>

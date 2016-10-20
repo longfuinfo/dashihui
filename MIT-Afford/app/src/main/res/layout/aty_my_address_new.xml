@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/my_address_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_new_address"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlty_top"
+        android:background="@drawable/affordshop_detail_border"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="@color/confirmorder_textbg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/confirmorder_contact"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_16"
+                android:layout_marginRight="@dimen/dip_16"
+                android:background="@color/confirmorder_edittext_bg"
+                android:hint="请填写收货人姓名"
+                android:padding="@dimen/dip_5"
+                android:singleLine="true"
+                android:textColor="@color/confirmorder_hinttext"
+                android:textSize="@dimen/confirmorder_hint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:background="@color/confirmorder_textbg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/bg_checked"
+                    android:drawablePadding="@dimen/dip_6"
+                    android:padding="@dimen/dip_5"
+                    android:text="@string/confirmorder_man"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_60"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/bg_checked"
+                    android:drawablePadding="@dimen/dip_6"
+                    android:padding="@dimen/dip_5"
+                    android:text="@string/confirmorder_women"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="@color/confirmorder_textbg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmorder_phone"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/confirmorder_edittext_bg"
+                android:digits="1234567890"
+                android:hint="请填写收货人电话号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="@dimen/dip_10"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="@color/confirmorder_hinttext"
+                android:textSize="@dimen/confirmorder_hint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:background="@color/confirmorder_textbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmorder_community"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <TextView
+                    android:id="@+id/text_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_16"
+                    android:drawableLeft="@drawable/icon_map_loction"
+                    android:drawablePadding="@dimen/dip_9"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dip_10"
+                    android:text=""
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/btn_edit_address"
+                    android:gravity="center_vertical"
+                    android:text="许昌路与洛宁路交汇处"
+                    android:textColor="@color/confirmorder_hinttext"
+                    android:textSize="@dimen/confirmorder_hint"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Lyt_editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:background="@color/confirmorder_textbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/size14"
+                    android:text="@string/confirmorder_address"
+                    />
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/size12"
+                    android:hint="@string/confirmorder_editaddr"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lyt_chooseaddr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:background="@color/confirmorder_textbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_addr_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/confirmorder_textbg"
+                    android:drawablePadding="@dimen/dip_10"
+                    android:drawableRight="@drawable/btn_into_gray"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/dip_16"
+                    android:text="@string/confirmorder_address_details"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:drawablePadding="@dimen/dip_10"
+                    android:drawableRight="@drawable/btn_into_gray"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dip_10"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:paddingTop="@dimen/dip_10"
+                    android:text="@string/confirmorder_address_choose"
+                    android:textColor="@color/confirmorder_hinttext"
+                    android:textSize="@dimen/confirmorder_hint"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dip_16">
+
+                <CheckBox
+                    android:id="@+id/default_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/bg_checked"
+                    android:text="@string/default_addr"
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/personal_textview" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:background="@drawable/btn_red_exit"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_15"
+        android:paddingTop="@dimen/dip_15"
+        android:text="@string/my_save_addr"
+        android:textColor="@color/white"
+        android:textSize="@dimen/confirm_title" />
+
+    <LinearLayout
+        android:id="@+id/lyt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_btn_save"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/userinfo"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/affordshop_detail_border"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:background="@color/picker_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/order_build"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/order_unit"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/order_room"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:layout_marginRight="@dimen/dip_16"
+            android:orientation="horizontal">
+
+            <com.dashihui.afford.thirdapi.addressPicker.widget.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_weight="1"
+                android:background="@color/white"></com.dashihui.afford.thirdapi.addressPicker.widget.WheelView>
+
+            <com.dashihui.afford.thirdapi.addressPicker.widget.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_weight="1"></com.dashihui.afford.thirdapi.addressPicker.widget.WheelView>
+
+            <com.dashihui.afford.thirdapi.addressPicker.widget.WheelView
+                android:id="@+id/id_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_weight="1"></com.dashihui.afford.thirdapi.addressPicker.widget.WheelView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:background="@drawable/affordshop_detail_border"
+            android:gravity="center"
+            android:text="@string/order_done"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+
+</RelativeLayout>

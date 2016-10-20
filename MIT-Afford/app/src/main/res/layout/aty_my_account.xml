@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_account_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_account_title"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/affordshop_detail_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyt_headpic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:paddingTop="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_account_headimg"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <ImageView
+                android:id="@+id/img_headpic"
+                android:layout_width="@dimen/dip_40"
+                android:layout_height="@dimen/dip_40"
+                android:layout_marginRight="@dimen/dip_10"
+                android:src="@drawable/icon_head_pic" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:id="@+id/lyt_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_account_username"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dip_20"
+                android:text="苏珊珊"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:id="@+id/lyt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_account_phone"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dip_20"
+                android:text="137****1939"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:id="@+id/lyt_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_account_password"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dip_20"
+                android:drawableRight="@drawable/btn_into_gray"
+                android:text="@string/my_account_updatepwd"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/btn_into_gray"
+                android:gravity="center_vertical"
+                android:text="@string/my_account_address"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBtn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="@drawable/btn_set_exit"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_15"
+        android:paddingTop="@dimen/dip_15"
+        android:text="@string/my_account_exit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/confirm_title" />
+
+</LinearLayout>

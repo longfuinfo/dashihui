@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dip_12"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_12">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip_12"
+            android:background="@drawable/image_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/dip_7"
+                android:paddingTop="@dimen/dip_7"
+                android:text=""
+                android:textColor="@color/service_name"
+                android:textSize="@dimen/size16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dip_7"
+                    android:paddingTop="@dimen/dip_7"
+                    android:text="@string/server_nums"
+                    android:textColor="@color/service_content"
+                    android:textSize="@dimen/size12" />
+
+                <TextView
+                    android:id="@+id/tv_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="@dimen/dip_7"
+                    android:text="00次"
+                    android:textColor="@color/service_nums"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_present"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/dip_7"
+                android:paddingTop="@dimen/dip_7"
+                android:text=""
+                android:textColor="@color/service_content"
+                android:textSize="@dimen/size12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line_view"/>
+</LinearLayout>

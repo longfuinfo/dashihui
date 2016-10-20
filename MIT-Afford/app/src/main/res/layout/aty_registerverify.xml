@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 -->
+    <RelativeLayout
+        android:id="@+id/topRlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center_vertical" >
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dip_12"
+            android:background="@color/transparent"
+            android:src="@drawable/ico_back"
+            android:contentDescription="@string/back"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/newRegister"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"/>
+    </RelativeLayout>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        android:contentDescription="@string/app_name" />
+
+    <!-- 步骤线 -->
+    <LinearLayout
+        android:id="@+id/news_tablyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/news_composite_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dip_3"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/line_blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+        <Button
+            android:id="@+id/news_local_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dip_3"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/line_gray"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16" />
+    </LinearLayout>
+    <!-- 输入手机号码文本框 -->
+    <EditText
+        android:id="@+id/editPhone"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="@dimen/edit_size"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_minHeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_26"
+        android:background="@drawable/edit_style_one"
+        android:hint="@string/edithint"
+        android:inputType="phone"
+        android:maxLength="11"/>
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_26"
+        android:background="@drawable/btn_style_one"
+        android:text="@string/verifybtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size17" />
+
+    <!-- 已有账号 -->
+    <TextView
+        android:id="@+id/verifyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dip_15"
+        android:gravity="right"
+        android:text="@string/accountNumber"
+        android:textColor="#005bff"
+        android:textSize="@dimen/size12" />
+
+</LinearLayout>

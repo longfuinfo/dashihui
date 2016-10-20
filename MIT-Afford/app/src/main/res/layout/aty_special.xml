@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="精品推荐"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/pulltorefresh_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/rlty_top"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fastScrollEnabled="false"
+                android:listSelector="@color/transparent"
+                android:background="@color/defaultBg"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dip_10">
+
+            <ImageView
+                android:id="@+id/iv_add_cart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/breakfast_bottom_left" />
+
+            <TextView
+                android:id="@+id/nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_30"
+                android:layout_marginTop="@dimen/dip_1"
+                android:background="@drawable/img_red_numer"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/cor6"
+                android:textSize="@dimen/size10" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

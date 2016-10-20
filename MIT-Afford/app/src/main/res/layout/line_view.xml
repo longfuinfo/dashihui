@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 分隔线 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_0.5"
+        android:background="@color/confirmorder_line"
+        android:contentDescription="@string/app_name"/>
+</merge>

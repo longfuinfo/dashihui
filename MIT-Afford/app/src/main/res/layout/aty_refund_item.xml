@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/dip_12"
+    android:paddingRight="@dimen/dip_12"
+    android:paddingBottom="@dimen/dip_10"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dip_48"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/home_more"
+                android:textColor="@color/hintcolor"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_6"
+                android:gravity="center|right"
+                android:text="@string/home_more"
+                android:textColor="@color/hintcolor"
+                android:textSize="@dimen/size14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingRight="16dp"
+            android:text="@string/home_more"
+            android:textColor="#DB3B34"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_0.5"
+        android:background="@color/confirmorder_line"
+        android:contentDescription="@string/app_name"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/confirmorder_line"
+        android:dividerHeight="@dimen/dip_0.5"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_0.5"
+        android:background="@color/confirmorder_line"
+        android:contentDescription="@string/app_name"/>
+    <LinearLayout
+        android:id="@+id/loutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/home_more"
+            android:textColor="@color/afford_oldprice"
+            android:textSize="@dimen/size14" />
+        <TextView
+            android:id="@+id/txtRefundTrade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/home_more"
+            android:textSize="@dimen/size14"
+            android:textColor="@color/afford_name"/>
+
+        <TextView
+            android:id="@+id/txtRefundPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:gravity="right"
+            android:text="@string/home_more"
+            android:textColor="@color/afford_oldprice"
+            android:textSize="@dimen/size14" />
+        <TextView
+            android:id="@+id/txtRefundNum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/home_more"
+            android:textColor="#DB3B34"
+            android:textSize="@dimen/size14"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtRefundState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:gravity="left"
+        android:text="@string/home_more"
+        android:textColor="#DB3B34"
+        android:textSize="@dimen/size14" />
+</LinearLayout>

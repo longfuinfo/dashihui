@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.server.AtyServer">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/include_top_service" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/server_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/txtEempty"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/txtEempty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dip_40"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dip_60"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dip_30"
+        android:drawableTop="@drawable/server_list_empty"
+        android:text="@string/server_empty"
+        android:textSize="@dimen/size14" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dateDay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_60"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/afford_new_goodsprice"
+            android:textColor="@color/service_name"
+            android:textSize="@dimen/size16" />
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/afford_new_goodsprice"
+            android:textColor="@color/service_tiemtext"
+            android:textSize="@dimen/size10"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

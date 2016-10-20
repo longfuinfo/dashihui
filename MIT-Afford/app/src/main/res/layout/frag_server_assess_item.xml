@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_nopay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/affordshop_detail_border"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip_6"
+        android:paddingRight="@dimen/dip_6">
+
+        <LinearLayout
+            android:id="@+id/top_LytTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/proser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dip_10"
+                android:text=""
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:text="@string/server_success"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint" />
+
+            <TextView
+                android:id="@+id/all_order_suceess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:text="@string/order_success"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include layout="@layout/line_view"/>
+
+        <LinearLayout
+            android:id="@+id/goods_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_bg"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_6"
+                android:layout_marginBottom="@dimen/dip_6"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_my_service"
+                    android:drawablePadding="@dimen/dip_11"
+                    android:paddingTop="@dimen/dip_9"
+                    android:paddingBottom="@dimen/dip_9"
+                    android:gravity="center"
+                    android:textColor="@color/service_name"
+                    android:textSize="@dimen/size14"
+                    />
+                <TextView
+                    android:id="@+id/ser_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/serviceorde_icon_goodsname"
+                    android:drawablePadding="@dimen/dip_11"
+                    android:paddingTop="@dimen/dip_9"
+                    android:paddingBottom="@dimen/dip_9"
+                    android:gravity="center"
+                    android:textColor="@color/service_name"
+                    android:textSize="@dimen/size14"
+                    />
+                <TextView
+                    android:id="@+id/ser_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/serviceorde_icon_timebuying"
+                    android:drawablePadding="@dimen/dip_11"
+                    android:paddingTop="@dimen/dip_9"
+                    android:paddingBottom="@dimen/dip_9"
+                    android:gravity="center"
+                    android:textColor="@color/service_name"
+                    android:textSize="@dimen/size14"
+                    />
+                <TextView
+                    android:id="@+id/ser_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/serviceorde_icon_adress"
+                    android:drawablePadding="@dimen/dip_11"
+                    android:paddingTop="@dimen/dip_9"
+                    android:paddingBottom="@dimen/dip_9"
+                    android:gravity="center"
+                    android:textColor="@color/service_name"
+                    android:textSize="@dimen/size14"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dip_6"
+                android:text="@string/server_paymoney"
+                android:textColor="@color/service_name"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/ser_amout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_10"
+                android:text="￥0.0"
+                android:textColor="@color/service_topay"
+                android:textSize="@dimen/size14" />
+
+            <Button
+                android:id="@+id/btn_surged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order_cancel_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_7"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_7"
+                android:text="@string/server_surged"
+                android:textColor="@drawable/btn_order_cancel"
+                android:textSize="@dimen/personal_texthint" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_15"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/server_done"
+                android:textColor="@drawable/btn_order_clicktext"
+                android:textSize="@dimen/personal_texthint" />
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_15"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/server_delete"
+                android:textColor="@drawable/btn_order_clicktext"
+                android:textSize="@dimen/personal_texthint" />
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_15"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/server_cancel"
+                android:textColor="@drawable/btn_order_clicktext"
+                android:textSize="@dimen/personal_texthint" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/affordshop_goods_bg">
+
+    <LinearLayout
+        android:id="@+id/item_addrtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gridview_item_height"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dip_8"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_goodsname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dip_12"
+                android:layout_marginLeft="@dimen/dip_8"
+                android:layout_marginRight="@dimen/dip_8"
+                android:lines="2"
+                android:text="商品名"
+                android:textColor="@color/afford_goodsname"
+                android:textSize="@dimen/size14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_16">
+
+                <TextView
+                    android:id="@+id/item_new_goodsprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="111"
+                    android:textColor="@color/afford_newprice"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/item_old_goodsprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:lines="1"
+                    android:text="222"
+                    android:textColor="@color/afford_oldprice"
+                    android:textSize="@dimen/size12" />
+
+                <ImageView
+                    android:id="@+id/shopcart_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cvs_btn_addshopcar" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

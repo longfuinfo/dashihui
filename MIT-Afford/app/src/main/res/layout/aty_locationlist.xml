@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dashihui.afford.ui.activity.AtyLocationList">
+    <include layout="@layout/include_top_page" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topRlyt"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+    <LinearLayout
+        android:id="@+id/lyt_visibi_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/topRlyt"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLoction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_30"
+            android:drawablePadding="@dimen/dip_10"
+            android:drawableTop="@drawable/icon_loction_err"
+            android:gravity="center"
+            android:text="@string/loction_err"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

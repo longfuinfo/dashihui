@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dashihui.afford.ui.activity.AtyOrderState">
+    <include layout="@layout/include_top_page" />
+    <LinearLayout
+        android:id="@+id/mainLyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/topRlyt"
+        android:paddingBottom="@dimen/dip_3"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_16"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_5"
+                android:text="支付方式："
+                android:textColor="@color/location_city"
+                android:textSize="@dimen/loc_nearby_community" />
+
+            <TextView
+                android:id="@+id/pay_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loc_com_name"
+                android:textSize="@dimen/loc_nearby_community" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="@dimen/dip_5"
+                android:text="配送方式："
+                android:textColor="@color/location_city"
+                android:textSize="@dimen/loc_nearby_community" />
+
+            <TextView
+                android:id="@+id/del_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loc_com_name"
+                android:textSize="@dimen/loc_nearby_community" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_5"
+                android:text="订单编号："
+                android:textColor="@color/location_city"
+                android:textSize="@dimen/loc_nearby_community" />
+
+            <TextView
+                android:id="@+id/ord_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/loc_com_name"
+                android:textSize="@dimen/loc_nearby_community" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:paddingTop="10dp"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mainLyout"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+</RelativeLayout>

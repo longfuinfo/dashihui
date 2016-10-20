@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/affordshop_detail_border"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip_6"
+        android:paddingRight="@dimen/dip_6">
+
+        <LinearLayout
+            android:id="@+id/top_LytTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_logo"
+                android:drawablePadding="@dimen/dip_8"
+                android:padding="@dimen/dip_10"
+                android:text="@string/app_name"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_textview" />
+
+            <TextView
+                android:id="@+id/all_order_waitpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:text="@string/order_wait_pay"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint" />
+
+            <TextView
+                android:id="@+id/all_order_suceess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:text="@string/order_success"
+                android:textColor="@color/personal_hinttext"
+                android:textSize="@dimen/personal_texthint"
+                android:visibility="gone" />
+        </LinearLayout>
+
+       <include layout="@layout/line_view"/>
+
+        <LinearLayout
+            android:id="@+id/goods_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dip_67"
+                android:layout_height="@dimen/dip_67"
+                android:layout_marginBottom="@dimen/dip_12"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_16"
+                android:layout_marginTop="@dimen/dip_12"
+                android:background="@drawable/image_border">
+
+                <ImageView
+                    android:id="@+id/goods_img"
+                    android:layout_width="@dimen/dip_65"
+                    android:layout_height="@dimen/dip_65"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_list" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dip_10"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dip_6"
+                android:text="@string/order_disbursements"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/personal_texthint" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_10"
+                android:text="￥0.0"
+                android:textColor="@color/allorder_price"
+                android:textSize="@dimen/personal_texthint" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order_cancel_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_15"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/order_cancel"
+                android:textColor="@drawable/btn_order_cancel"
+                android:textSize="@dimen/personal_texthint" />
+            <Button
+                android:id="@+id/tv_btn_urged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_26"
+                android:paddingRight="@dimen/dip_26"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/order_urged"
+                android:textColor="@drawable/btn_order_clicktext"
+                android:textSize="@dimen/personal_texthint" />
+
+            <Button
+                android:id="@+id/btn_topay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:background="@drawable/btn_order"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dip_8"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_15"
+                android:paddingTop="@dimen/dip_8"
+                android:text="@string/order_topay"
+                android:textColor="@drawable/btn_order_clicktext"
+                android:textSize="@dimen/personal_texthint" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

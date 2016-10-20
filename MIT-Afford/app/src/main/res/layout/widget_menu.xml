@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_button_group_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/menu_bg"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/menuLayout01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/menuImg01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_bot01"
+                    android:contentDescription="@string/app_name" />
+                <TextView
+                    android:id="@+id/menuView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_red_numer"
+                    android:gravity="center"
+                    android:layout_marginLeft="-13dp"
+                    android:textColor="@color/cor6"
+                    android:textSize="@dimen/size10"
+                    android:layout_toRightOf="@+id/menuImg01"
+                    android:text="0"
+                    android:visibility="gone" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/menuTxtViewName01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/menu_pressed"
+                android:text="@string/home"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/menuLayout02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/menuImg02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_bot02"
+                    android:contentDescription="@string/app_name" />
+                <TextView
+                    android:id="@+id/menuView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_red_numer"
+                    android:gravity="center"
+                    android:layout_marginLeft="-13dp"
+                    android:textColor="@color/cor6"
+                    android:textSize="@dimen/size10"
+                    android:layout_toRightOf="@+id/menuImg02"
+                    android:text="0"
+                    android:visibility="gone" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/menuTxtViewName02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/menu_pressed"
+                android:text="@string/affordShop"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/menuLayout03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/menuImg03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_bot04"
+                    android:contentDescription="@string/app_name" />
+                <TextView
+                    android:id="@+id/menuView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_red_numer"
+                    android:gravity="center"
+                    android:layout_marginLeft="-13dp"
+                    android:textColor="@color/cor6"
+                    android:textSize="@dimen/size10"
+                    android:layout_toRightOf="@+id/menuImg03"
+                    android:text="0"
+                    android:visibility="gone" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/menuTxtViewName03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/menu_pressed"
+                android:text="@string/service"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/menuLayout04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/menuImg04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_bot03"
+                    android:contentDescription="@string/app_name" />
+                <TextView
+                    android:id="@+id/menuView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_red_numer"
+                    android:gravity="center"
+                    android:layout_marginLeft="-13dp"
+                    android:textColor="@color/cor6"
+                    android:textSize="@dimen/size10"
+                    android:layout_toRightOf="@+id/menuImg04"
+                    android:text="0"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/menuTxtViewName04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/menu_pressed"
+                android:text="@string/shoppingCart"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/menuLayout05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/menuImg05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_bot05"
+                    android:contentDescription="@string/app_name" />
+                <TextView
+                    android:id="@+id/menuView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_red_numer"
+                    android:gravity="center"
+                    android:layout_marginLeft="-13dp"
+                    android:textColor="@color/cor6"
+                    android:textSize="@dimen/size10"
+                    android:layout_toRightOf="@+id/menuImg05"
+                    android:text="0"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/menuTxtViewName05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/menu_pressed"
+                android:text="@string/my"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

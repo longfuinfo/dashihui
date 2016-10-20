@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_menu_template_button_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:paddingTop="6dp"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/bottom_menu_template_img_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:layout_gravity="center"
+            android:src="@drawable/menu_bot01"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/tv_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/img_red_numer"
+            android:gravity="center"
+            android:layout_marginLeft="-13dp"
+            android:textColor="@color/cor6"
+            android:textSize="@dimen/size10"
+            android:layout_toRightOf="@+id/bottom_menu_template_img_id"
+            android:text="0"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/bottom_menu_template_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/menu_pressed"
+        android:text="@string/home"
+        android:textSize="10sp" />
+
+</LinearLayout>

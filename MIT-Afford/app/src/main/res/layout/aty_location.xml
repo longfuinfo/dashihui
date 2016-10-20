@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.AtyLocation">
+    <RelativeLayout  android:id="@+id/topRlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingTop="@dimen/dip_16"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:textSize="@dimen/top_font"
+            android:textColor="@color/top_font"
+            android:drawablePadding="@dimen/top_drawable_padding"
+            android:src="@drawable/ico_back"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_default"
+            android:textColor="@color/afford_goodstitle"
+            android:textSize="@dimen/title_top">
+
+        </TextView>
+        <TextView
+            android:id="@+id/loginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:text="登 录"
+            android:textSize="@dimen/dip_16"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/top_padding"
+            android:paddingLeft="@dimen/top_padding"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:background="@drawable/affordshop_detail_border"
+            android:drawableLeft="@drawable/icon_current_loction"
+            android:drawablePadding="@dimen/dip_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:text="@string/loc_city"
+            android:textColor="@color/location_city"
+            android:textSize="@dimen/loc_city" />
+
+        <TextView
+            android:id="@+id/loccity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:text="郑州"
+            android:textColor="@color/location_cityname"
+            android:textSize="@dimen/loc_cityname" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_45"
+        android:background="@drawable/affordshop_detail_border"
+        android:drawableLeft="@drawable/icon_current_community"
+        android:drawablePadding="@dimen/dip_16"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_16"
+        android:text="@string/loc_community"
+        android:textColor="@color/location_city"
+        android:textSize="@dimen/loc_city" />
+
+    <LinearLayout
+        android:id="@+id/layout_err"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/community"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_45"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dip_16"
+                    android:paddingRight="@dimen/dip_16"
+                    android:text=""
+                    android:textColor="@color/location_cityname"
+                    android:textSize="@dimen/loc_cityname" />
+
+                <TextView
+                    android:id="@+id/community_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dip_10"
+                    android:paddingLeft="@dimen/dip_16"
+                    android:paddingRight="@dimen/dip_16"
+                    android:text=""
+                    android:textColor="@color/personal_hinttext"
+                    android:textSize="@dimen/confirm_hint" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/layoutBoxAgree"
+                android:layout_width="@dimen/dip_22"
+                android:layout_height="@dimen/dip_22"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dip_16"
+                android:background="@drawable/bg_checked"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/change_community"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="@drawable/affordshop_detail_border"
+            android:gravity="center"
+            android:text="@string/loc_change_community"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/loc_city" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_visibi_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLoction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_30"
+            android:drawablePadding="@dimen/dip_10"
+            android:drawableTop="@drawable/icon_loction_err"
+            android:gravity="center"
+            android:text="@string/loction_err"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+        <TextView
+            android:id="@+id/txtLocVisit"
+            android:layout_width="@dimen/dip_260"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="@string/loction_yeserr"
+            android:textColor="@color/personal_hinttext"
+            android:textSize="@dimen/size14" />
+        <Button
+            android:id="@+id/btnNoAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/btn_order"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dip_8"
+            android:paddingLeft="@dimen/dip_15"
+            android:paddingRight="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_8"
+            android:text="@string/manual"
+            android:textColor="@drawable/btn_order_clicktext"
+            android:textSize="@dimen/loc_city" />
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/btn_order"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dip_8"
+            android:paddingLeft="@dimen/dip_15"
+            android:paddingRight="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_8"
+            android:text="@string/continueStr"
+            android:textColor="@drawable/btn_order_clicktext"
+            android:textSize="@dimen/loc_city" />
+
+
+    </LinearLayout>
+</LinearLayout>

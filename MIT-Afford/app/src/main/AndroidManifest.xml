@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dashihui.afford" >
+    <!--新加权限-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 可调用拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".AffordApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:installLocation="preferExternal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="@string/baiKey" />
+
+        <activity android:name=".ui.activity.AtyWelCome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.AtyHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyShoppingCart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyWallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyShihuibi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyRecommendFriend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyWhatShihuibi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyMember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyMemberShare"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyNavigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.shop.AtyAffordShop"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ui.activity.shop.AtyAffordShopDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyFragmentOrdert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtySettlement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyRegisterVerify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyFragmentDiscount"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.my.AtySet" />
+        <activity
+            android:name=".ui.activity.AtyFragmentService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyAddressNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtySettlementRemark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyFeedSug"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtySetAbout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.shop.AtyAffordShopDetailImageText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtySearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyCollect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyAddressUpdata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.AtyMyBrowseHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerHouse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerHouseClean"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerHouseSettlement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerSettlement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyServerDetailImageText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyFragmentServerDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.server.AtyFragmentServerTime"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyBreakfast"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyHomeSpecialList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AtyNetWork"
+            android:label="@string/title_activity_aty_net_work"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AtyOrdertDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AtyOrderState"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AtyEvaluate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.my.AtyRefund"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AtyLocationList"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 支付宝支付 -->
+        <!-- 返回结果页面 -->
+        <activity
+            android:name=".alipay.PayResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.activity.AtySettlementAddress"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.activity.AtySettlementOrder"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 请将value改为MTA分配的appkey -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="@string/MTA_KEY" />
+        <!-- 请将value改为app发布对应的渠道，不同的发布渠道使用不同的名字 < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="大实惠" />
+        <!-- 注意：若填写的渠道为纯数字字符串类型，请不要超过int表示的范围！ < -->
+
+        <activity android:name=".ui.activity.AtyOrderComplete" >
+        </activity>
+    </application>
+
+</manifest>

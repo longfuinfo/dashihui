@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg"
+        android:paddingLeft="@dimen/dip_6">
+
+        <ImageButton
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_new_address"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlty_top"
+        android:background="@drawable/affordshop_detail_border"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dip_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="@color/confirmorder_textbg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/confirmorder_contact"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_16"
+                android:layout_marginRight="@dimen/dip_16"
+                android:background="@color/confirmorder_edittext_bg"
+                android:hint="请填写收货人姓名"
+                android:padding="@dimen/dip_5"
+                android:singleLine="true"
+                android:textColor="@color/confirmorder_hinttext"
+                android:textSize="@dimen/confirmorder_hint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:background="@color/confirmorder_textbg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/bg_checked"
+                    android:drawablePadding="@dimen/dip_6"
+                    android:padding="@dimen/dip_5"
+                    android:text="@string/confirmorder_man"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_60"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/bg_checked"
+                    android:drawablePadding="@dimen/dip_6"
+                    android:padding="@dimen/dip_5"
+                    android:text="@string/confirmorder_women"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="@color/confirmorder_textbg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmorder_phone"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/confirmorder_edittext_bg"
+                android:digits="1234567890"
+                android:hint="请填写收货人电话号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="@dimen/dip_10"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="@color/confirmorder_hinttext"
+                android:textSize="@dimen/confirmorder_hint" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Lyt_editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:background="@color/confirmorder_textbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/size14"
+                    android:text="@string/confirmorder_address"
+                    />
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/size12"
+                    android:hint="@string/confirmorder_editaddr"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dip_16">
+
+                <CheckBox
+                    android:id="@+id/default_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/bg_checked"
+                    android:text="@string/default_addr"
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/personal_textview" />
+            </LinearLayout>
+            <include layout="@layout/line_view"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bottom_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:layout_marginRight="@dimen/dip_16"
+            android:background="@drawable/btn_order_topay"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_15"
+            android:text="@string/my_save_addr"
+            android:textColor="@color/white"
+            android:textSize="@dimen/confirm_title" />
+    </LinearLayout>
+</LinearLayout>

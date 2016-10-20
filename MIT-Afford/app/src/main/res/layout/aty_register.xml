@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.AtyRegister">
+
+    <RelativeLayout
+        android:id="@+id/topRlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/back"
+            android:paddingLeft="@dimen/dip_12"
+            android:paddingRight="30dp"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/newRegister"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/news_tablyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/news_composite_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dip_3"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/line_green"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18" />
+
+        <Button
+            android:id="@+id/news_local_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dip_3"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/line_blue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size18" />
+    </LinearLayout>
+    <!-- 输入手机号码文本框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_26"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editNewPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_minHeight"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:layout_marginLeft="@dimen/dip_18"
+            android:layout_marginRight="@dimen/dip_18"
+            android:background="@drawable/edit_style_one"
+            android:hint="输入新手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/edit_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editVerify"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_minHeight"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_style_one"
+            android:hint="@string/enterVerify"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/edit_size" />
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_minHeight"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gray"
+            android:focusable="false"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+    </LinearLayout>
+    <!-- 密码 -->
+    <EditText
+        android:id="@+id/editPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_minHeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_8"
+        android:background="@drawable/edit_style_one"
+        android:hint="@string/userpwd"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="@dimen/edit_size" />
+    <!-- 确认密码 -->
+    <EditText
+        android:id="@+id/editPwd1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_minHeight"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_8"
+        android:background="@drawable/edit_style_one"
+        android:hint="@string/pwd1"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="@dimen/edit_size" />
+    <EditText
+        android:id="@+id/editInvitationCode"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_minHeight"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="@dimen/edit_size"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_12"
+        android:background="@drawable/edit_style_one"
+        android:hint="@string/invitationCode"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+    <!-- 再次确认密码 -->
+    <EditText
+        android:id="@+id/editPwd2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_36"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_8"
+        android:background="@drawable/edit_style_one"
+        android:hint="@string/pwd1"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="@dimen/edit_size"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/chkBoxAgree"
+        style="@style/MyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_18"
+        android:layout_marginRight="@dimen/dip_18"
+        android:layout_marginTop="@dimen/dip_15"
+        android:background="@null"
+        android:checked="true"
+        android:drawablePadding="4.0dip"
+        android:text="@string/agree"
+        android:textColor="#666666"
+        android:textSize="12.0sp" />
+    <!-- 立即注册 -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_15"
+        android:background="@drawable/btn_style_one"
+        android:text="@string/nowRegister"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size18" />
+
+</LinearLayout>

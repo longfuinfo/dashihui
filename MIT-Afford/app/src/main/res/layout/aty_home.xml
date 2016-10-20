@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="false"
+    tools:context="com.dashihui.afford.ui.activity.AtyHome">
+    <!-- 顶部标题栏 -->
+
+
+    <include
+        android:id="@+id/trade_title_bar"
+        layout="@layout/include_top" />
+
+
+    <LinearLayout
+        android:id="@+id/topRlyt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/loc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dip_8"
+            android:drawableRight="@drawable/top_arrow"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_10"
+            android:text="@string/choiceConvenienceStore"
+            android:tag="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dip_14" />
+
+        <RelativeLayout
+            android:id="@+id/top_btn_rightSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_6">
+
+            <TextView
+                android:id="@+id/search_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_36"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_bg_border"
+                android:gravity="center_vertical"
+                android:hint="天天都实惠"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#adadad"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/apps_search_img"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_sesrch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topRlyt"
+        android:orientation="vertical">
+        <com.dashihui.afford.ui.widget.WgtGridViewWithHeaderAndFooter
+            android:id="@+id/wgtHAF_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            android:horizontalSpacing="3dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_nonetwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_no_network" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dip_26"
+                    android:text="@string/home_no_net"
+                    android:textColor="@color/search_name"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:text="@string/home_examine"
+                    android:textColor="@color/search_name"
+                    android:visibility="gone"
+                    android:textSize="@dimen/size12" />
+
+                <TextView
+                    android:id="@+id/net_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dip_12"
+                    android:background="@drawable/btn_order"
+                    android:paddingBottom="@dimen/dip_8"
+                    android:paddingLeft="@dimen/dip_26"
+                    android:paddingRight="@dimen/dip_26"
+                    android:paddingTop="@dimen/dip_8"
+                    android:text="@string/home_net_rep"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/size14" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:padding="@dimen/dip_10"
+        android:src="@drawable/store_btn_from_bottom" />
+
+    <LinearLayout
+        android:id="@+id/lyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_shopcart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menu_bot04" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

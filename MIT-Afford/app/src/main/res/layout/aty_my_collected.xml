@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/collect"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/right_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:paddingTop="@dimen/dip_10"
+            android:text="@string/collect_edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/confirm_title" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/aty_shopcart_noshopping_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlty_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dip_60">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attentiongoods_icon_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_40"
+            android:padding="@dimen/dip_10"
+            android:text="@string/collected_no"
+            android:textColor="@color/shopcart_noshopping"
+            android:textSize="@dimen/shopcart_noshopping" />
+
+        <TextView
+            android:id="@+id/go_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/btn_order_topay"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:paddingTop="@dimen/dip_10"
+            android:text="@string/shopping_going"
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopcart_going" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBtn_add_shopcart"
+            android:layout_width="0dp"
+            android:onClick="onTvBtnAddClick"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/detail_shopcart"
+            android:gravity="center"
+            android:text="@string/collect_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+        <TextView
+            android:id="@+id/tvBtn_delete"
+            android:layout_width="0dp"
+            android:onClick="onTvBtnDeleteClick"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:text="@string/collect_delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottom_collect"
+    android:layout_below="@id/rlty_top">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listView_collect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:background="@color/defaultBg"
+        android:scrollbars="none" />
+    <RelativeLayout
+        android:id="@+id/rlyt_shopcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dip_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_add_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/breakfast_bottom_left" />
+
+        <TextView
+            android:id="@+id/nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_22"
+            android:layout_marginTop="@dimen/dip_5"
+            android:background="@drawable/img_red_numer"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cor6"
+            android:textSize="@dimen/size10" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+</RelativeLayout>

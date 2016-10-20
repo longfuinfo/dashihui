@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/include_top_service" />
+
+    <RelativeLayout
+        android:id="@+id/rlytTop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/housekeeping"
+            layout="@layout/include_viewpager" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+
+
+        <LinearLayout
+            android:id="@+id/dayClean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_6"
+            android:paddingBottom="@dimen/dip_6"
+            android:layout_marginTop="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:background="@drawable/list_bg_boder"
+            android:tag="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/svhousekeeping_icon_dailycleaning" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:text="@string/home_day"
+                    android:textColor="@color/home_clean"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dip_10"
+                    android:paddingTop="@dimen/dip_10"
+                    android:lineSpacingExtra="@dimen/dip_5"
+                    android:text="适用于家具、家电、台面、地面、墙面等区域的日常表面清洁。"
+                    android:maxLines="2"
+                    android:textColor="@color/home_explain"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/deepClean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_6"
+            android:paddingBottom="@dimen/dip_6"
+            android:layout_marginTop="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_16"
+            android:background="@drawable/list_bg_boder"
+            android:paddingRight="@dimen/dip_16"
+            android:tag="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/svhousekeeping_icon_deepcleaning" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:text="@string/home_deep"
+                    android:textColor="@color/home_clean"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/deep_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dip_10"
+                    android:paddingTop="@dimen/dip_10"
+                    android:lineSpacingExtra="@dimen/dip_5"
+                    android:text="适用于长时间未打扫的房屋，将累积已久的油渍、污渍、尘垢等全部清扫干净。"
+                    android:maxLines="2"
+                    android:textColor="@color/home_explain"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

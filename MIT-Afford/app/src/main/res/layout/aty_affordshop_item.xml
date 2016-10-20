@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/affordshop_goods_bg">
+
+    <LinearLayout
+        android:id="@+id/act_affordshop_item_ralayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+
+        <ImageView
+            android:id="@+id/act_affordshop_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gridview_item_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dip_3"
+            android:minHeight="@dimen/gridview_item_height"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_affordshop_item_addrtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_affordshop_item_ralayout"
+        android:layout_marginLeft="@dimen/dip_8"
+        android:layout_marginRight="@dimen/dip_8"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dip_10">
+
+            <TextView
+                android:id="@+id/aty_affordshop_item_goodsname"
+                android:layout_marginTop="@dimen/dip_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text=""
+                android:textColor="@color/afford_goodsname"
+                android:textSize="@dimen/size14" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:layout_marginBottom="@dimen/dip_5"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_8"
+            android:paddingRight="@dimen/dip_8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aty_affordshop_item_new_goodsprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="￥0.00"
+                    android:textColor="@color/afford_newprice"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:id="@+id/aty_affordshop_item_old_goodsprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="￥0.00"
+                    android:textColor="@color/afford_oldprice"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/shopcart_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/affordshop_add_shopcart" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

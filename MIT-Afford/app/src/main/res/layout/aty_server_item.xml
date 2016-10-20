@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/affordshop_goods_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lyt_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="@dimen/dip_48"
+            android:layout_height="@dimen/dip_48"
+            android:src="@drawable/service_btn_car" />
+
+        <TextView
+            android:id="@+id/tvImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dip_8"
+            android:text="@string/server_air_ticket"
+            android:textColor="@color/server_tv"
+            android:textSize="@dimen/size16" />
+    </LinearLayout>
+
+
+</LinearLayout>

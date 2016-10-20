@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_menu_template_button_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="@dimen/dip_6">
+
+    <LinearLayout
+        android:id="@+id/lyt_toptab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ddddd"
+            android:textColor="@color/menu_pressed"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dip_3"
+            android:gravity="center"
+            android:text="fffff"
+            android:textColor="@color/menu_pressed"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

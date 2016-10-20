@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.server.AtyServer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/server_titlepic"
+            android:scaleType="fitXY"
+            android:src="@drawable/service_img_ad" />
+
+        <LinearLayout
+            android:id="@+id/lyt_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dip_13"
+            android:paddingBottom="@dimen/dip_13"
+            android:orientation="vertical">
+
+            <com.dashihui.afford.ui.widget.WgtGridViewServer
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp"></com.dashihui.afford.ui.widget.WgtGridViewServer>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/line_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/margin"
+                android:drawablePadding="@dimen/dip_16"
+                android:text="@string/server_nearshops"
+                android:textColor="@color/service_content"
+                android:textSize="@dimen/size14" />
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+    </LinearLayout>
+</LinearLayout>

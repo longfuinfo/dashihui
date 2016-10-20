@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor1">#e5000000</color>
+    <color name="cor2">#66000000</color>
+    <color name="cor3">#33000000</color>
+    <color name="cor4">#cccccc</color>
+    <color name="cor5">#f5f5f5</color>
+    <color name="cor6">#ffffff</color>
+    <color name="cor7">#66ffffff</color>
+    <color name="cor8">#3395ff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 顶部字体颜色 -->
+    <color name="top_font">#dededd</color>
+
+    <color name="itemTitle">#141414</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+
+    <!-- 白色 -->
+    <color name="white2">#ffcccccc</color>
+    <!-- 浅灰色 -->
+    <color name="light_gray">#ff7c7c7c</color>
+    <!-- 浅灰色2 -->
+    <color name="light_gray2">#2f2f2f</color>
+    <!-- 橙色 -->
+    <color name="light_yellow">#f4b16f</color>
+    <!-- 透明色-->
+    <color name="transparent">#00000000</color>
+    <color name="trans">#85000000</color>
+    <!-- 默认背景色 -->
+    <color name="defaultBg">#f5f5f5</color>
+    <!-- 首页背景颜色 -->
+    <color name="home_bg1">#d9ebc8</color>
+    <color name="home_bg2">#d7edfb</color>
+    <color name="home_bg3">#fbdfbe</color>
+    <color name="home_bg4">#ebdaea</color>
+    <color name="home_bg5">#fffcc8</color>
+    <!-- 首页点击后背景颜色 -->
+    <color name="home_pressedbg1">#b5d690</color>
+    <color name="home_pressedbg2">#a8c8da</color>
+    <color name="home_pressedbg3">#e6bf90</color>
+    <color name="home_pressedbg4">#c8a7c5</color>
+    <color name="home_pressedbg5">#e2dc82</color>
+    <!-- 首页字体颜色 -->
+    <color name="home_font1">#00923f</color>
+    <color name="home_font2">#005197</color>
+    <color name="home_font3">#901e78</color>
+    <color name="home_font4">#5d4f93</color>
+    <color name="home_font5">#e15616</color>
+    <!-- 首页字体颜色 -->
+    <color name="home_title">#72706f</color>
+    <color name="hintcolor">#999999</color>
+
+    <!--便利店字体颜色-->
+    <color name="afford_goodstitle">#dededd</color>
+    <color name="afford_goods_secendtitle">#72706f</color>
+    <color name="afford_goodsname">#555555</color>
+    <color name="afford_newprice">#ff6600</color>
+    <color name="afford_oldprice">#555555</color>
+    <color name="afford_bg">#eeeeee</color>
+    <color name="afford_all">#555555</color>
+
+    <!--便利店改版后字体颜色-->
+    <color name="afford_name">#000000</color>
+    <color name="afford_old_price">#999999</color>
+
+    <!--详情页字体颜色-->
+    <color name="detail_goodstitle">#ffffff</color>
+    <color name="detail_goods_secendtitle">#72706f</color>
+    <color name="detail_goodsname">#555555</color>
+    <color name="detail_newprice">#ff6600</color>
+    <color name="detail_oldprice">#555555</color>
+    <color name="detail_bg">#ffffff</color>
+    <color name="detail_desc">#FF0000</color>
+
+    <!-- 详情页底部购物车导航栏颜色 -->
+    <color name="detail_shopcart">#ef000000</color>
+    <color name="detail_shopcart_bg">#c52720</color>
+    <color name="detail_black">#e5000000</color>
+    <color name="detail_gray">#4d4948</color>
+    <color name="detail_gray1">#b9b9b9</color>
+    <color name="detail_gray2">#acacac</color>
+
+    <!-- 定位页字体颜色 -->
+    <color name="location_city">#555555</color>
+    <color name="location_cityname">#555555</color>
+
+    <!-- 定位附近小区页字体颜色 -->
+    <color name="loc_com">#4d4948</color>
+    <color name="loc_com_name">#e5000000</color>
+    <color name="loc_com_address">#acacac</color>
+    <color name="loc_com_distance">#acacac</color>
+    <!--确认订单页字体颜色-->
+    <color name="confirmorder_title">#ffffff</color>
+    <color name="confirmorder_textview">#555555</color>
+    <color name="confirmorder_hinttext">#4d4948</color>
+    <color name="confirmorder_line">#dddddd</color>
+    <color name="confirmorder_addbg">#faeee6</color>
+    <color name="confirmorder_textbg">#ffffff</color>
+    <color name="confirmorder_txtprice">#000</color>
+    <!--EditText的透明背景色-->
+    <color name="confirmorder_edittext_bg">#00000000</color>
+    <!-- 底部菜单选中时字体颜色 -->
+    <color name="menu_selected">#ffE15616</color>
+    <!-- 底部菜单没有选中时字体颜色 -->
+    <color name="menu_pressed">#ffaaa9a9</color>
+
+
+    <!--确认支付页字体颜色-->
+    <color name="confirm_textview">#555555</color>
+    <color name="confirm_hinttext">#4d4948</color>
+    <color name="confirm_line">#dddddd</color>
+    <color name="confirm_textbg">#e0e9e4</color>
+    <color name="btn_order_bg">#c52720</color>
+    <color name="btn_dialog">#555555</color>
+    <color name="btn_select_bg">#EEEEEE</color>
+
+    <color name="btn_receive">#DA251D</color>
+    <color name="btn_cancle">#999999</color>
+    <color name="confirm_transparent">#0000</color>
+    <!--支付未送货页字体颜色-->
+    <color name="confirm_paydone_textview">#e5000000</color>
+    <color name="confirm_paydone_hinttext">#72706f</color>
+    <color name="confirm_paydone_line">#72706f</color>
+    <color name="confirm_paydone_textbg">#e0e9e4</color>
+    <color name="confirm_paydone_click">#ffE15616</color>
+
+    <!--支付已送货页字体颜色-->
+    <color name="confirm_done_textview">#e5000000</color>
+    <color name="confirm_done_hinttext">#72706f</color>
+    <color name="confirm_done_line">#72706f</color>
+    <color name="confirm_done_textbg">#e0e9e4</color>
+    <!--<color name="background_tab_pressed">#66316cbc</color>-->
+    <color name="background_tab_pressed">#f2f2f2</color>
+
+    <!--未登录个人中心页字体颜色-->
+    <color name="personal_textview">#555555</color>
+    <color name="personal_hinttext">#999999</color>
+    <color name="personal_line">#dddddd</color>
+    <color name="personal_textbg">#ffffff</color>
+    <!--个人中心顶部关注商品背景半透明色-->
+    <color name="my_translucence">#88a42e2b</color>
+
+    <!--登录后个人中心页字体颜色-->
+    <color name="personal_login_textview">#555555</color>
+    <color name="personal_login_hinttext">#999999</color>
+    <color name="personal_login_line">#dddddd</color>
+    <color name="personal_login_textbg">#ffffff</color>
+
+    <!--商品列表顶部字体颜色-->
+    <color name="shop_font_black">#000000</color>
+    <color name="shop_font_red">#c52720</color>
+
+    <!--我的订单 WdtPagerSlidingTabStrip -->
+    <!-- WdtPagerSlidingTabStrip -->
+    <color name="btfontBlue">#c52720</color>
+    <color name="topTitle">#666666</color>
+    <color name="topfontblue">#c52720</color>
+    <color name="bg_tab_pressed">#eeeeee</color>
+    <color name="tab_text_color_selected">#c52720</color>
+    <color name="tab_text_color_normal">#fff</color>
+
+    <!--便利店点击顶部弹出底部菜单页文字颜色-->
+    <color name="popu_hinttext">#555555</color>
+    <!--便利店点击PopuWiindow子项字体颜色-->
+    <color name="popu_click_text">#fc605e</color>
+    <!--便利店点击PopuWiindow子项背景颜色-->
+    <color name="popu_click_bg">#e4e4e4</color>
+    <!--便利店点击顶部弹出底部菜单页背景颜色-->
+    <color name="popu_bg">#88000000</color>
+    <!--便利店点击顶部弹出PopuWiindow背景颜色-->
+    <color name="popu_popuwindow">#a0000000</color>
+    <!--便利店点击顶部弹出底部菜单页背景颜色-->
+    <color name="addrDialog_bg">#66000000</color>
+    <!--便利店点击顶部弹出底部菜单页"取消"颜色-->
+    <color name="addrDialog_cancel">#999999</color>
+
+
+    <!--购物车listview边框线条颜色-->
+    <color name="list_bg">#ffffff</color>
+    <color name="list_border">#dddddd</color>
+    <color name="shopcart_name">#555555</color>
+    <color name="shopcart_price">#ff0000</color>
+    <!--购物车没有物品时的字体颜色-->
+    <color name="shopcart_noshopping">#555555</color>
+    <color name="shopcart_going">#e5000000</color>
+
+    <color name="allorder_price">#da411d</color>
+    <color name="province_line_border">#dddddd</color>
+    <!--服务-->
+    <color name="server_tv">#777777</color>
+    <color name="service_name">#555555</color>
+    <color name="service_content">#999999</color>
+    <color name="service_price">#e93427</color>
+    <color name="service_nums">#ff0000</color>
+    <color name="service_text">#ffffff</color>
+    <color name="service_border">#dddddd</color>
+    <color name="service_textbg">#fc605e</color>
+    <color name="service_topay">#db3b34</color>
+    <color name="service_tiemtext">#000000</color>
+    <color name="service_sure">#303030</color>
+    <color name="service_boder">#d84f4f</color>
+    <color name="service_timebg">#f2f2f2</color>
+    <color name="service_time">#fc605e</color>
+
+    <!--搜索-->
+    <color name="search_name">#555555</color>
+    <color name="search_cut">#cccccc</color>
+    <color name="search_press">#E73F18</color>
+    <color name="search_black">#000000</color>
+
+<!--地址选择器颜色-->
+    <color name="picker_bg">#fcf3f3</color>
+
+    <!--家政-->
+    <color name="home_clean">#555555</color>
+    <color name="home_explain">#999999</color>
+    <color name="home_hint">#777777</color>
+
+<!--点击效果颜色-->
+<!--线条边框颜色-->
+    <color name="boder_line">#dddddd</color>
+    <!--商品背景点击效果-->
+    <color name="good_bg">#ffffff</color>
+    <color name="good_press">#ebebeb</color>
+    <!--顶部栏字体点击颜色-->
+    <color name="top_title">#ffffff</color>
+    <color name="top_title_press">#8b0d0d</color>
+    <!--忘记密码字体点击颜色-->
+    <color name="login_forget">#005bff</color>
+    <color name="login_forget_press">#012d5a</color>
+
+    <!--便利店顶部菜单-->
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+
+    <!--便利店顶部菜单-->
+    <color name="order_detail_state">#0094dd</color>
+
+</resources>

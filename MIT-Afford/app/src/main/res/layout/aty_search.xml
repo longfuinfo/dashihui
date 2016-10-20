@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- 顶部 -->
+
+    <include layout="@layout/merge_top_search_real" />
+
+    <LinearLayout
+        android:id="@+id/lyt_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dip_20">
+
+        <TextView
+            android:id="@+id/txt_zonghe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/search_zonghe"
+            android:textSize="@dimen/search_font" />
+
+        <!--
+               <TextView
+                   android:id="@+id/txt_sell"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center_horizontal|center_vertical"
+                   android:text="@string/search_sell"
+                   android:textSize="@dimen/search_font" />
+                   -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/search_cut"
+            android:layout_marginTop="@dimen/search_cut"
+            android:background="@color/search_cut" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/store_nav_btn_self_nor"
+                android:text="@string/search_self"
+                android:textSize="@dimen/search_font" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/search_cut"
+            android:layout_marginTop="@dimen/search_cut"
+            android:background="@color/search_cut" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="-35dp"
+            android:drawableRight="@drawable/store_arrow_dow"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/search_price"
+            android:textSize="@dimen/search_font" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/apps_search_classify_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/apps_search_history_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/apps_search_result_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/defaultBg"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlyt_nohistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/search_icon_ineffective" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dip_26"
+                        android:text="@string/search_nohistory"
+                        android:textColor="@color/search_name"
+                        android:textSize="@dimen/size16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dip_12"
+                        android:text="@string/search_again"
+                        android:textColor="@color/search_name"
+                        android:textSize="@dimen/size12" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dip_10">
+
+            <ImageView
+                android:id="@+id/iv_add_cart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/breakfast_bottom_left" />
+
+            <TextView
+                android:id="@+id/nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_22"
+                android:layout_marginTop="@dimen/dip_5"
+                android:background="@drawable/img_red_numer"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/cor6"
+                android:textSize="@dimen/size10" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

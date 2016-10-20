@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/apps_search_history_item_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_button_bg"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="18dip"
+        android:singleLine="true"
+        android:text="tring/"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/apps_search_history_item_delete_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/bg_btn_delete" />
+
+</RelativeLayout>

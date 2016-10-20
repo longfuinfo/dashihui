@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.ui.activity.shop.AtyAffordShopDetail">
+
+    <com.dashihui.afford.ui.widget.WgtDragLayout
+        android:id="@+id/draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detail_bottom">
+
+        <FrameLayout
+            android:id="@+id/first_framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/second_framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.dashihui.afford.ui.widget.WgtDragLayout>
+    <LinearLayout
+        android:id="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/detail_shopcart"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/detail_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dip_5"
+            android:paddingTop="@dimen/dip_5">
+
+            <TextView
+                android:id="@+id/detail_fav_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/btn_normal_concern"
+                android:layout_marginTop="@dimen/dip_8"
+                android:drawablePadding="@dimen/dip_3"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size10" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/detail_shopcart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="@dimen/dip_3"
+                android:drawableTop="@drawable/shop_detail_shopcart_bg"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size10" />
+
+            <TextView
+                android:id="@+id/tv_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/bottom_menu_template_img_id"
+                android:background="@drawable/img_red_numer"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/cor6"
+                android:textSize="@dimen/size10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/detail_joinshopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size14" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dip_16"
+            android:src="@drawable/shop_detail_back_bg" />
+    </RelativeLayout>
+</RelativeLayout>

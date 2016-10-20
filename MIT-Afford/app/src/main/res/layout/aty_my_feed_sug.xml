@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context="com.dashihui.afford.ui.activity.my.AtyMyFeedSug">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@drawable/top_bg">
+
+            <ImageButton
+                android:id="@+id/left_iback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_20"
+                android:src="@drawable/ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/feed_title"
+                android:textColor="@color/confirmorder_title"
+                android:textSize="@dimen/confirmorder_title"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg"
+                android:gravity="top"
+                android:hint="@string/feed_idea"
+                android:maxLength="500"
+                android:maxLines="20"
+                android:minLines="10"
+                android:padding="@dimen/dip_16"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/edit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/et_feedback"
+                android:layout_alignRight="@id/et_feedback"
+                android:background="@color/list_bg"
+                android:lines="1"
+                android:padding="@dimen/dip_10"
+                android:text="0/500"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@color/list_bg"
+            android:hint="@string/feed_phone"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+
+        <TextView
+            android:id="@+id/tvbtn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:layout_marginRight="@dimen/dip_16"
+            android:layout_marginTop="@dimen/dip_20"
+            android:background="@drawable/btn_feedsug"
+            android:gravity="center"
+            android:padding="@dimen/dip_10"
+            android:text="@string/remark_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dip_6"
+        android:paddingRight="@dimen/dip_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_telephone"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_phone_num"
+            android:textColor="@color/detail_shopcart_bg"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_30"
+            android:text="@string/setting_time"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size12" />
+    </LinearLayout>
+</RelativeLayout>

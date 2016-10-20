@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/left_cBoxAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:background="@color/transparent"
+            android:button="@drawable/bg_checked"
+            android:checked="true"
+            android:paddingRight="@dimen/dip_16"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip_16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/username_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dip_6"
+                    android:text=""
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/personal_textview" />
+
+                <TextView
+                    android:id="@+id/phone_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dip_6"
+                    android:text=""
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/personal_textview" />
+
+                <TextView
+                    android:id="@+id/addr_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:padding="@dimen/dip_6"
+                    android:text=""
+                    android:textColor="@color/personal_textview"
+                    android:textSize="@dimen/personal_textview"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/default_addr_bg"
+                    android:paddingBottom="@dimen/dip_3"
+                    android:paddingLeft="@dimen/dip_8"
+                    android:paddingRight="@dimen/dip_8"
+                    android:paddingTop="@dimen/dip_3"
+                    android:text="@string/default_address"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/my_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:paddingRight="@dimen/dip_10"
+                    android:paddingBottom="@dimen/dip_6"
+                    android:paddingTop="@dimen/dip_6"
+                    android:text=""
+                    android:textColor="@color/personal_hinttext"
+                    android:textSize="@dimen/personal_texthint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_imgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:src="@drawable/btn_edit_address" />
+    </LinearLayout>
+
+    <include layout="@layout/line_view" />
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context="com.dashihui.afford.ui.activity.AtySettlement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cancelorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_48"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dip_16"
+                    android:paddingRight="@dimen/dip_16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/affordshop_detail_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/supermarket_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_45"
+                    android:layout_marginLeft="@dimen/dip_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/confirmorder_supermarket_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listViewGoods"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:descendantFocusability="blocksDescendants"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0dp"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/transparent"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_seritem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dip_48"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dip_16"
+                        android:paddingRight="@dimen/dip_16"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/sername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/confirmorder_textview"
+                            android:textSize="@dimen/confirmorder_content" />
+
+                        <TextView
+                            android:id="@+id/sertime"
+                            android:layout_width="@dimen/dip_60"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/dip_5"
+                            android:text=""
+                            android:textColor="@color/confirmorder_textview"
+                            android:textSize="@dimen/confirmorder_content" />
+
+                        <TextView
+                            android:id="@+id/serPrice"
+                            android:layout_width="@dimen/dip_60"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/dip_5"
+                            android:text=""
+                            android:textColor="@color/confirmorder_textview"
+                            android:textSize="@dimen/confirmorder_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dip_16"
+                        android:paddingRight="@dimen/dip_16">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/dip_16"
+                            android:paddingTop="@dimen/dip_5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/order_total"
+                                android:textColor="@color/btn_order_bg"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                            <TextView
+                                android:id="@+id/goods_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/btn_order_bg"
+                                android:textSize="@dimen/confirmorder_content" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/dip_10"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/confirmorder_favorable"
+                                android:textColor="@color/confirmorder_hinttext"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                            <TextView
+                                android:id="@+id/explain_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/detail_newprice"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/line_view" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_45"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dip_10"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/favorable_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_favo_explain"
+                        android:drawablePadding="@dimen/dip_4"
+                        android:text="@string/confirmorder_favorable_explain"
+                        android:textColor="@color/confirmorder_hinttext"
+                        android:textSize="@dimen/confirmorder_hint" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/affordshop_detail_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:descendantFocusability="blocksDescendants"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0dp"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/transparent"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

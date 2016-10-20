@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_item_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/txt_line_1"
+            android:layout_marginLeft="22dp"
+            android:layout_width="@dimen/dip_1"
+            android:layout_height="10dp"
+            android:background="@color/confirmorder_line"
+            android:contentDescription="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/tail_history_ever"
+            />
+        <!--<include-->
+            <!--android:id="@+id/trade_title_bar"-->
+            <!--layout="@layout/line_vertical" />-->
+        <View
+            android:id="@+id/txt_line_2"
+            android:layout_width="@dimen/dip_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image"
+            android:layout_marginLeft="22dp"
+            android:background="@color/confirmorder_line"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ord_txt_deta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="sjdhksjhdkjskdjh"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/ord_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="ksjhdfkjshdkj"
+            android:paddingTop="15dp"
+            android:textSize="12sp" />
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/confirmorder_line"/>
+    </LinearLayout>
+
+
+</LinearLayout>

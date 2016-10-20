@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topRlyt"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:background="@drawable/top_bg">
+
+    <Button
+        android:id="@+id/top_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/top_padding"
+        android:text="@string/top_right"
+        android:textSize="@dimen/top_font"
+        android:textColor="@color/top_font"
+        android:visibility="gone"
+        android:drawableRight="@drawable/top_arrow"
+        android:drawablePadding="@dimen/top_drawable_padding"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/title_default"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/top_arrow"
+        android:drawablePadding="@dimen/dip_8"
+        android:tag="1"
+        android:textSize="@dimen/title_top">
+
+    </TextView>
+    <ImageButton
+        android:id="@+id/top_btn_rightSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:paddingRight="@dimen/dip_16"
+        android:paddingLeft="@dimen/top_padding"
+        android:src="@drawable/top_my"
+        android:tag="3"
+        android:background="@color/transparent"/>
+
+
+</RelativeLayout>

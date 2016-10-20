@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/content_view_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/content_view_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/content_view_image"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/content_view_text1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/content_view_text"
+            android:text="0%"
+            android:textColor="#000000" />
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_toRightOf="@id/content_view_text1"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/notif_ico6" />
+        
+        <!-- style="@android:style/Widget.ProgressBar.Horizontal" -->
+        <ProgressBar
+            android:id="@+id/content_view_progress"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/myprogress_horizonta"
+            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+            android:minHeight="@dimen/dip_5"
+            android:maxHeight="@dimen/dip_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_view_image"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/notif_specialty_selectpart_bg"
+            android:max="100" />
+    </RelativeLayout>
+
+</LinearLayout>

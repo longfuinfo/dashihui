@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_item_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/affordshop_goods_bg"
+        android:padding="@dimen/dip_16">
+
+        <TextView
+            android:id="@+id/location_com_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dip_5"
+            android:text="本地附近"
+            android:textColor="@color/loc_com_name"
+            android:textSize="@dimen/loc_nearby_community" />
+
+        <TextView
+            android:id="@+id/location_com_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_3"
+            android:gravity="left"
+            android:text="200"
+            android:textColor="@color/loc_com_address"
+            android:textSize="@dimen/loc_nearby_community_name" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_1"
+        android:background="@color/confirmorder_line" />
+</LinearLayout>

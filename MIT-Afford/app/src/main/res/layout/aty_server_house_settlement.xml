@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context="com.dashihui.afford.ui.activity.AtySettlement">
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg"
+        android:paddingLeft="@dimen/dip_6">
+
+        <ImageButton
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/server_sureorder"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/set_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/aty_affordshop_detail_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/detail_shopcart"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+
+            <TextView
+                android:id="@+id/txtViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/home_totalmoney"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtViewSettlement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:text="@string/home_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/set_bottom"
+        android:layout_below="@id/top_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="vertical">
+            <!--以下是登录和未登录不同的部分-->
+            <!--登录状态-->
+            <RelativeLayout
+                android:id="@+id/rlyt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/confirmorder_addbg">
+
+                <LinearLayout
+                    android:id="@+id/addAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dip_16"
+                    android:paddingRight="@dimen/dip_6">
+
+                    <TextView
+                        android:id="@+id/noAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/dip_17"
+                        android:layout_marginTop="@dimen/dip_17"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/noAddress"
+                        android:textColor="@color/confirmorder_textview"
+                        android:textSize="@dimen/size16"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/top_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dip_17"
+                        android:layout_marginTop="@dimen/dip_17"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/confirmorder_textview"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                            <TextView
+                                android:id="@+id/usersex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dip_16"
+                                android:text=""
+                                android:textColor="@color/confirmorder_textview"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                            <TextView
+                                android:id="@+id/userphone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dip_16"
+                                android:text=""
+                                android:textColor="@color/confirmorder_textview"
+                                android:textSize="@dimen/confirmorder_content" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/useraddr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dip_12"
+                            android:drawableLeft="@drawable/icon_map_loction"
+                            android:drawablePadding="@dimen/dip_10"
+                            android:text=""
+                            android:textColor="@color/confirmorder_textview"
+                            android:textSize="@dimen/confirmorder_content" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/ibtn_userinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/dip_10"
+                        android:src="@drawable/icon_eidt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/confirm_order_address_bg"
+                    android:orientation="vertical"></LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/serverTimeLyt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/list_bg_boder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/server_deliverytime"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <TextView
+                    android:id="@+id/server_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:drawableRight="@drawable/btn_into_gray"
+                    android:gravity="center_vertical"
+                    android:hint="@string/home_choosetime"
+                    android:text=""
+                    android:textColor="@color/home_hint"
+                    android:textSize="@dimen/size14" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_cleanser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/affordshop_detail_border"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_16"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_cleaner"
+                    android:textColor="@color/home_clean"
+                    android:textSize="@dimen/size14" />
+
+                <CheckBox
+                    android:id="@+id/cBoxAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/dip_6"
+                    android:drawableRight="@drawable/bg_checked"
+                    android:text="@string/home_cleaner_hint"
+                    android:textColor="@color/home_hint"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/payType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/affordshop_detail_border"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/confirm_weixin_cBoxAgree"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_16"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/bg_checked"
+                    android:text="@string/confirmorder_pay"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+                <include layout="@layout/line_view" />
+
+                <RadioButton
+                    android:id="@+id/confirm_delivery_cBoxAgree"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_48"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_16"
+                    android:layout_marginRight="@dimen/dip_16"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/bg_checked"
+                    android:text="@string/server_deliverypay"
+                    android:textColor="@color/confirmorder_textview"
+                    android:textSize="@dimen/confirmorder_content" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/lyt_remark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/list_bg_boder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/confirmorder_delivery_remark"
+                    android:textColor="@color/home_clean"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/delivery_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:drawableRight="@drawable/btn_into_gray"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/home_textremark"
+                    android:maxEms="7"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/home_hint"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/affordshop_detail_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_16"
+                android:paddingRight="@dimen/dip_16">
+
+                <TextView
+                    android:id="@+id/clean_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_day"
+                    android:textColor="@color/home_clean"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dip_30"
+                    android:layout_toRightOf="@id/clean_class"
+                    android:gravity="center_vertical"
+                    android:text="2.0小时"
+                    android:textColor="@color/service_time"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:id="@+id/goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="￥0.00"
+                    android:textColor="@color/service_time"
+                    android:textSize="@dimen/size14" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

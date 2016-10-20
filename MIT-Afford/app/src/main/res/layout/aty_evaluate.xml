@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    tools:context="com.dashihui.afford.ui.activity.AtyEvaluate">
+    <include layout="@layout/include_top_page" />
+    <LinearLayout
+        android:id="@+id/mainLlyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topRlyt"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dip_16"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="商品满意度："
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size16" />
+
+            <RatingBar
+                android:id="@+id/ratBarShop"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dip_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="配送速度满意度："
+                android:paddingLeft="@dimen/dip_16"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size16" />
+
+            <RatingBar
+                android:id="@+id/ratBarSpeed"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dip_10"
+                android:numStars="5"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dip_8"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="服务质量满意度："
+                android:paddingLeft="@dimen/dip_16"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size16" />
+
+            <RatingBar
+                android:id="@+id/ratBarServer"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dip_10"
+                android:numStars="5"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_below="@id/mainLlyout"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#BEBEBE" />
+    <RelativeLayout
+        android:id="@+id/mainRlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainLlyout"
+        android:layout_marginTop="@dimen/dip_16">
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_bg"
+            android:gravity="top"
+            android:hint="@string/feed_sug"
+            android:maxLength="500"
+            android:maxLines="20"
+            android:minLines="10"
+            android:padding="@dimen/dip_16"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+
+        <TextView
+            android:id="@+id/edit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_feedback"
+            android:layout_alignRight="@id/et_feedback"
+            android:background="@color/list_bg"
+            android:lines="1"
+            android:padding="@dimen/dip_10"
+            android:text="1/500"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size14" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/tvbtn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_48"
+        android:layout_marginTop="@dimen/dip_20"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_feedsug"
+        android:gravity="center"
+        android:text="@string/remark_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size14" />
+
+
+</RelativeLayout>

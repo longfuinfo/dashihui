@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    tools:context="com.dashihui.afford.wxapi.WXPayEntryActivity">
+
+    <RelativeLayout
+        android:id="@+id/aty_confirm_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/confirmorder"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dip_20"
+        android:paddingTop="@dimen/dip_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_ordernum"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/confirm_textview" />
+
+            <TextView
+                android:id="@+id/ordernums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/confirm_textview" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/confirm_third_pay"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/confirm_title" />
+
+            <TextView
+                android:id="@+id/aty_confirm_paymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥：0.0"
+                android:textColor="@color/afford_newprice"
+                android:textSize="@dimen/confirm_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dip_20"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/supermarket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_weixin_pay"
+            android:drawablePadding="@dimen/dip_15"
+            android:gravity="center_vertical"
+            android:text="@string/confirmorder_weichatpay"
+            android:textColor="@color/confirm_textview"
+            android:textSize="@dimen/confirm_textview" />
+
+        <CheckBox
+            android:id="@+id/aty_weixin_BoxAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_checked"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dip_20"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/alipay_logo"
+            android:drawablePadding="@dimen/dip_15"
+            android:gravity="center_vertical"
+            android:text="@string/confirmorder_alipay"
+            android:textColor="@color/confirm_textview"
+            android:textSize="@dimen/confirm_textview" />
+
+        <CheckBox
+            android:id="@+id/alipay_BoxAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_checked"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_16">
+
+
+        <RadioGroup
+            android:id="@+id/raidoGroup_payType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/wx_radioBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_weixin_pay"
+                android:drawablePadding="@dimen/dip_15"
+                android:drawableRight="@drawable/bg_checked"
+                android:gravity="center_vertical"
+                android:text="@string/confirmorder_weichatpay"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+            <include layout="@layout/line_view" />
+
+            <RadioButton
+                android:id="@+id/alipay_radioBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/alipay_logo"
+                android:drawablePadding="@dimen/dip_15"
+                android:drawableRight="@drawable/bg_checked"
+                android:gravity="center_vertical"
+                android:text="@string/confirmorder_alipay"
+                android:textColor="@color/confirmorder_textview"
+                android:textSize="@dimen/confirmorder_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_45"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_50"
+        android:background="@drawable/btn_sure_settlement"
+        android:gravity="center"
+        android:text="@string/confirm_pay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/confirm_textview" />
+
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context="com.dashihui.afford.ui.activity.AtyShoppingCart_bak">
+
+    <RelativeLayout
+        android:id="@+id/topRlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:drawablePadding="@dimen/top_drawable_padding"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back"
+            android:textColor="@color/top_font"
+            android:textSize="@dimen/top_font" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_default"
+            android:textColor="@color/afford_goodstitle"
+            android:textSize="@dimen/title_top">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/editTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:paddingLeft="@dimen/top_padding"
+            android:paddingRight="@dimen/top_padding"
+            android:text="编  辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dip_16" />
+
+        <TextView
+            android:id="@+id/completeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:paddingLeft="@dimen/top_padding"
+            android:paddingRight="@dimen/top_padding"
+            android:text="完  成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dip_16"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/aty_shopcart_noshopping_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topRlyt"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dip_50">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_shopping_cart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_40"
+            android:padding="@dimen/dip_10"
+            android:text="@string/shopping_noshopping"
+            android:textColor="@color/shopcart_noshopping"
+            android:textSize="@dimen/shopcart_noshopping" />
+
+        <TextView
+            android:id="@+id/go_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/btn_order_topay"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:paddingTop="@dimen/dip_10"
+            android:text="@string/shopping_going"
+            android:textColor="@color/white"
+            android:textSize="@dimen/shopcart_going" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/aty_affordcart_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/aty_affordshop_detail_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/detail_shopcart"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <CheckBox
+                android:id="@+id/cBoxAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/bg_checked"
+                android:drawablePadding="@dimen/dip_6"
+                android:padding="@dimen/dip_10"
+                android:paddingLeft="@dimen/dip_12"
+                android:text="@string/shopping_chooseall"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/txtViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dip_40"
+                android:layout_toRightOf="@+id/cBoxAgree"
+                android:gravity="center_vertical"
+                android:text="@string/shopping_totalmoney"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtViewSettlement"
+            android:layout_width="@dimen/shopping_bottom_joinshop_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:text="@string/shopping_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/aty_affordcart_detail_bottom"
+        android:layout_below="@+id/topRlyt"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/aty_edit_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopping_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/detail_shopcart"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16">
+
+            <CheckBox
+                android:id="@+id/deleteAllBoxAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/bg_checked"
+                android:drawablePadding="@dimen/dip_6"
+                android:padding="@dimen/dip_10"
+                android:paddingLeft="@dimen/dip_12"
+                android:text="@string/shopping_chooseall"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtViewDetele"
+            android:layout_width="@dimen/shopping_bottom_joinshop_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_style_two"
+            android:gravity="center"
+            android:text="删  除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16" />
+
+    </LinearLayout>
+</RelativeLayout>

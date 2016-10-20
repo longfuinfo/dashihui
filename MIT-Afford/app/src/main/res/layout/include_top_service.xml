@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topRlyt"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:background="@drawable/top_bg">
+
+    <ImageButton
+        android:id="@+id/left_ibtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:contentDescription="@string/app_name"
+        android:drawablePadding="@dimen/top_drawable_padding"
+        android:paddingBottom="@dimen/dip_16"
+        android:paddingLeft="@dimen/dip_16"
+        android:paddingRight="@dimen/dip_24"
+        android:paddingTop="@dimen/dip_16"
+        android:visibility="gone"
+        android:src="@drawable/ico_back"
+        android:textColor="@color/top_font"
+        android:textSize="@dimen/top_font" />
+
+    <Button
+        android:id="@+id/top_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:contentDescription="@string/app_name"
+        android:drawablePadding="@dimen/top_drawable_padding"
+        android:drawableRight="@drawable/top_arrow"
+        android:paddingLeft="@dimen/top_padding"
+        android:text="@string/top_right"
+        android:textColor="@color/top_font"
+        android:textSize="@dimen/top_font"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:tag="1"
+        android:text="@string/service"
+        android:textColor="@color/afford_goodstitle"
+        android:textSize="@dimen/title_top">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/top_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/top_padding"
+        android:paddingRight="@dimen/dip_16"
+        android:src="@drawable/top_my"
+        android:visibility="gone"
+        android:tag="3" />
+
+
+</RelativeLayout>

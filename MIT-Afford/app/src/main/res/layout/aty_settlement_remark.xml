@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/remark_title"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/remark_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_16"
+        android:background="@drawable/affordshop_detail_border"
+        android:gravity="top"
+        android:hint="@string/remark_hint"
+        android:lines="12"
+        android:padding="@dimen/dip_16"
+        android:textColorHint="@color/personal_hinttext"
+        android:textSize="@dimen/size14" />
+
+    <TextView
+        android:id="@+id/remark_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_16"
+        android:background="@drawable/btn_order_topay"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_16"
+        android:paddingTop="@dimen/dip_16"
+        android:text="@string/remark_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size14" />
+    <LinearLayout
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dip_6"
+        android:paddingRight="@dimen/dip_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_telephone"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:id="@+id/remark_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_phone_num"
+            android:textColor="@color/detail_shopcart_bg"
+            android:textSize="@dimen/size12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_30"
+            android:text="@string/setting_time"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/size12" />
+    </LinearLayout>
+</LinearLayout>

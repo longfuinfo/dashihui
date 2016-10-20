@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultBg"
+        android:orientation="vertical"
+        tools:context="com.dashihui.afford.ui.activity.AtyLogin">
+
+        <RelativeLayout
+            android:id="@+id/topRlyt"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/top_bg" >
+            <ImageButton
+                android:id="@+id/ibtnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dip_12"
+                android:background="@color/transparent"
+                android:src="@drawable/ico_back"
+                android:contentDescription="@string/back"
+                android:paddingRight="30dp" />
+
+            <TextView
+                android:id="@+id/topTitle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white2"
+                android:textSize="@dimen/title_size" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="66dp"
+                android:paddingLeft="30dp" />
+            <Button
+                android:id="@+id/regeditBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/dip_15"
+                android:paddingRight="@dimen/dip_16"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="@string/register"
+                android:contentDescription="@string/app_name"
+                android:textSize="@dimen/title_size" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"
+            android:contentDescription="@string/app_name" />
+        <AutoCompleteTextView
+            android:id="@+id/editUserName"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:textColorHint="@color/hintcolor"
+            android:layout_height="@dimen/edit_minHeight"
+            android:completionHint="@string/userName"
+            android:textSize="@dimen/edit_size"
+            android:textColor="@color/black"
+            android:completionThreshold="1"
+            android:dropDownHorizontalOffset="0dip"
+            android:background="@drawable/edit_style_one"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:dropDownVerticalOffset="-10dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dip_18"
+            android:layout_marginRight="@dimen/dip_18"
+            android:layout_marginTop="@dimen/dip_12"
+            android:hint="@string/userName"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/editUserPwd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_minHeight"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/edit_size"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dip_18"
+            android:layout_marginRight="@dimen/dip_18"
+            android:layout_marginTop="@dimen/dip_12"
+            android:background="@drawable/edit_style_one"
+            android:hint="@string/userpwd"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_marginRight="@dimen/dip_20"
+            android:layout_marginTop="@dimen/dip_15"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/chkBoxMemory"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:drawablePadding="4.0dip"
+                android:checked="true"
+                android:visibility="gone"
+                android:text="@string/remember"
+                android:textColor="#666666"
+                android:textSize="14.0sp" />
+            <CheckBox
+                android:id="@+id/chkBoxAutoLogin"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dip"
+                android:drawablePadding="4.0dip"
+                android:text="@string/autologin"
+                android:textColor="#666666"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:layout_marginRight="@dimen/dip_16"
+            android:layout_marginTop="@dimen/dip_15"
+            android:background="@drawable/btn_style_one"
+            android:text="@string/nowLogin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18" />
+        <TextView
+            android:id="@+id/forgetTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/dip_15"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="@string/forgetPwd"
+            android:textColor="@drawable/login_forget_textclick"
+            android:layout_marginRight="16dp"
+            android:textSize="@dimen/size12" />
+
+    </LinearLayout>

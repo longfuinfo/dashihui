@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 背景填充色 -->
+    <solid android:color="@color/list_bg" />
+    <!-- 边框填充色 -->
+    <corners android:radius="@dimen/dip_1"/>
+</shape>

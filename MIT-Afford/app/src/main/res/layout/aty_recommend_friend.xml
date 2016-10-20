@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg">
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:clickable="false"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="推荐的好友"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e63f17"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_marginTop="@dimen/dip_20">
+            <TextView
+                android:id="@+id/friend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dip_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_3"
+                android:text="好友"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dip_15"/>
+            <Button
+                android:id="@+id/friend_share"
+                android:layout_marginLeft="150dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="分享好友"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐的好友越多，奖励越多，轻松理财"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dip_15"
+            android:layout_marginBottom="@dimen/dip_20"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dip_15"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="@dimen/dip_16"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="推荐的好友"
+                android:textSize="@dimen/dip_18"
+                android:layout_marginLeft="@dimen/dip_17"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_how_recommend"
+                android:layout_marginTop="@dimen/dip_16"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="如何推荐好友"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/detail_gray"/>
+
+        <ListView
+            android:id="@+id/lv_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+
+
+        <LinearLayout
+            android:id="@+id/noOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topRlyt"
+            android:layout_marginTop="@dimen/dip_120"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myorder_icon_empty" />
+
+            <TextView
+                android:id="@+id/go_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_20"
+                android:paddingBottom="@dimen/dip_10"
+                android:paddingLeft="@dimen/dip_20"
+                android:paddingRight="@dimen/dip_20"
+                android:paddingTop="@dimen/dip_10"
+                android:text="暂无推荐的好友"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/shopcart_going" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg">
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:clickable="false"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="什么是实惠币"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dip_15"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_marginTop="@dimen/dip_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mywallet_what"
+            android:textColor="#e63f17"
+            android:textSize="@dimen/dip_18"
+            android:layout_marginLeft="@dimen/dip_17"/>
+        <TextView
+            android:layout_marginTop="@dimen/dip_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mywallet_details"
+            android:textSize="@dimen/dip_14"
+            android:textColor="#555555"
+            android:layout_marginRight="@dimen/dip_15"
+            android:layout_marginLeft="@dimen/dip_20"/>
+        <TextView
+            android:layout_marginTop="@dimen/dip_10"
+            android:textColor="#e63f17"
+            android:id="@+id/tv_share"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:onClick="onShare"
+            android:layout_marginBottom="@dimen/dip_16"
+            android:textSize="@dimen/dip_14"
+            android:layout_marginLeft="@dimen/dip_20"/>
+    </LinearLayout>
+
+</LinearLayout>

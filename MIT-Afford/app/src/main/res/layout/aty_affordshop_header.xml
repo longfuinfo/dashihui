@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_viewpage"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_viewpage"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</RelativeLayout>

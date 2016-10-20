@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trade_title_bar"
+        android:paddingRight="@dimen/dip_1"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:background="@drawable/gridview_border"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    />
+
+</LinearLayout>

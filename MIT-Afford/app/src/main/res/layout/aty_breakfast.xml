@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor5"
+    tools:context=".MainActivity">
+    <RelativeLayout  android:id="@+id/topRlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingTop="@dimen/dip_16"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:textSize="@dimen/top_font"
+            android:textColor="@color/top_font"
+            android:drawablePadding="@dimen/top_drawable_padding"
+            android:src="@drawable/ico_back"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_default"
+            android:textColor="@color/afford_goodstitle"
+            android:textSize="@dimen/title_top">
+
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topRlyt"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listview_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:background="@color/cor5">
+
+        </ListView>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:paddingBottom="@dimen/dip_100"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_no_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_20"
+                android:text="即将上线，敬请期待！" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listview_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:visibility="gone"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:layout_weight="3"
+            android:background="#ffffff">
+
+        </ListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp">
+
+
+        <ImageView
+            android:id="@+id/iv_add_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center"
+            android:src="@drawable/breakfast_bottom_left" />
+
+        <com.dashihui.afford.ui.widget.WdtBadgeView
+            android:id="@+id/tv_count_price"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/breakfast_bottom_right"
+            android:gravity="center"
+            android:text="总金额￥0.0"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+</RelativeLayout>

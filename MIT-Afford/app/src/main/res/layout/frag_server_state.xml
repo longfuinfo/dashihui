@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_cancelorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_bottom_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_15"
+        >
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:background="@drawable/btn_sure_settlement"
+            android:text="@string/order_buyagain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size18"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/lyt_bottom_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shopping_bottom_height"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tvBtn_cancel_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_order_state"
+                android:gravity="center"
+                android:text="@string/ser_cancel"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/size16" />
+
+            <include layout="@layout/line_vertical" />
+
+            <Button
+                android:id="@+id/tvBtn_topay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_order_state"
+                android:gravity="center"
+                android:text="@string/ser_topay"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/size16" />
+
+            <Button
+                android:id="@+id/tvBtn_take"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_order_state"
+                android:gravity="center"
+                android:text="@string/ser_done"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/size16" />
+
+            <Button
+                android:id="@+id/tvBtn_urged"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_order_state"
+                android:gravity="center"
+                android:text="@string/ser_urged"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/size16" />
+            <Button
+                android:id="@+id/tvBtn_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_order_state"
+                android:gravity="center"
+                android:text="@string/ser_delete"
+                android:textColor="@color/confirm_textview"
+                android:textSize="@dimen/size16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/frag_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rlyt_bottom_order"
+        android:layout_below="@id/lyt_cancelorder"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_16"
+        android:background="@drawable/affordshop_detail_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/affordshop_goods_bg"
+            android:drawableLeft="@drawable/icon_about_our"
+            android:drawablePadding="@dimen/dip_15"
+            android:drawableRight="@drawable/btn_into_gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dip_16"
+            android:text="@string/setting_aboutour"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/personal_login_textview" />
+
+        <include layout="@layout/line_view" />
+
+        <TextView
+            android:id="@+id/setting_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/affordshop_goods_bg"
+            android:drawableLeft="@drawable/icon_setting_update"
+            android:drawablePadding="@dimen/dip_15"
+            android:drawableRight="@drawable/btn_into_gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dip_16"
+            android:text="@string/setting_update"
+            android:textColor="@color/personal_textview"
+            android:textSize="@dimen/personal_login_textview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dip_20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/set_phone"
+                android:textColor="@color/personal_textview"
+                android:textSize="@dimen/size14" />
+
+            <TextView
+                android:id="@+id/server_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/set_phone_num"
+                android:textColor="@color/btfontBlue"
+                android:textSize="@dimen/size14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/server_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:gravity="center"
+            android:text="@string/set_server_time"
+            android:textColor="@color/personal_hinttext"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_16"
+        android:layout_marginRight="@dimen/dip_16"
+        android:layout_marginTop="@dimen/dip_60"
+        android:background="@drawable/btn_set_exit"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_15"
+        android:paddingTop="@dimen/dip_15"
+        android:text="@string/my_account_exit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/confirm_title" />
+</LinearLayout>

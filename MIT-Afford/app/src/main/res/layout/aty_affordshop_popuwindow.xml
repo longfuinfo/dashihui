@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popu_bg"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topdialog_linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dip_30"
+        android:layout_marginRight="@dimen/dip_30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popu_afford_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topdialog_vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:background="@drawable/popu_top_bg"
+                android:gravity="center"
+                android:tag="1"
+                android:text="@string/topdialog_vegetable"
+                android:textColor="@drawable/popu_top_clicktext"
+                android:textSize="@dimen/topdialog_fonts" />
+
+            <include layout="@layout/line_view"/>
+
+            <TextView
+                android:id="@+id/topdialog_drinks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:background="@drawable/popu_top_clickbg"
+                android:gravity="center"
+                android:padding="@dimen/dip_5"
+                android:tag="2"
+                android:text="@string/topdialog_drinks"
+                android:textColor="@drawable/popu_top_clicktext"
+                android:textSize="@dimen/topdialog_fonts" />
+
+            <include layout="@layout/line_view"/>
+
+            <TextView
+                android:id="@+id/topdialog_lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:background="@drawable/popu_top_clickbg"
+                android:gravity="center"
+                android:padding="@dimen/dip_5"
+                android:tag="3"
+                android:text="@string/topdialog_lifestyle"
+                android:textColor="@drawable/popu_top_clicktext"
+                android:textSize="@dimen/topdialog_fonts" />
+
+           <include layout="@layout/line_view"/>
+
+            <TextView
+                android:id="@+id/topdialog_oils"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_48"
+                android:gravity="center"
+                android:padding="@dimen/dip_5"
+                android:background="@drawable/popu_bottom_bg"
+                android:tag="4"
+                android:text="@string/topdialog_oils"
+                android:textColor="@drawable/popu_top_clicktext"
+                android:textSize="@dimen/topdialog_fonts" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_popu_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_48"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/popu_cancel_bg"
+            android:gravity="center"
+            android:padding="@dimen/dip_5"
+            android:tag="5"
+            android:text="@string/topdialog_cancel"
+            android:textColor="@color/addrDialog_cancel"
+            android:textSize="@dimen/topdialog_fonts" />
+
+    </LinearLayout>
+</RelativeLayout>

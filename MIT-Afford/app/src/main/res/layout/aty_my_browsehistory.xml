@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultBg"
+        tools:context="com.dashihui.afford.ui.activity.my.AtyMyBrowseHistory">
+
+        <include
+            android:id="@+id/title_include"
+            layout="@layout/include_top_page" />
+
+        <LinearLayout
+            android:id="@+id/aty_browseHistory_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_include"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dip_50">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/browsinghistory_icon_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_30"
+                android:padding="@dimen/dip_10"
+                android:text="@string/nobrowsing"
+                android:textColor="@color/shopcart_noshopping"
+                android:textSize="@dimen/shopcart_noshopping" />
+
+            <TextView
+                android:id="@+id/go_browseHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/btn_order_topay"
+                android:paddingBottom="@dimen/dip_10"
+                android:paddingLeft="@dimen/dip_20"
+                android:paddingRight="@dimen/dip_20"
+                android:paddingTop="@dimen/dip_10"
+                android:text="@string/shopping_going"
+                android:textColor="@color/white"
+                android:textSize="@dimen/shopcart_going" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/title_include"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_shopcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dip_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_add_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/breakfast_bottom_left" />
+
+        <TextView
+            android:id="@+id/nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_22"
+            android:layout_marginTop="@dimen/dip_5"
+            android:background="@drawable/img_red_numer"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cor6"
+            android:textSize="@dimen/size10" />
+    </RelativeLayout>
+    </RelativeLayout>

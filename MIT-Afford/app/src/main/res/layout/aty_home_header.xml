@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/defaultBg"
+    android:orientation="vertical"
+    android:clickable="false"
+    tools:context="com.dashihui.afford.ui.activity.AtyHome">
+    <!-- 顶部标题栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topRlyt"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/trade_title_bar"
+            layout="@layout/include_viewpager" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dip_16"
+                    android:paddingRight="@dimen/dip_10"
+                    android:src="@drawable/home_notif_pro" />
+
+                <TextView
+                    android:layout_width="@dimen/dip_0.5"
+                    android:layout_height="wrap_content"
+                    android:background="@color/list_border"
+                    android:paddingBottom="@dimen/dip_5"
+                    android:paddingTop="@dimen/dip_5" />
+
+                <TextView
+                    android:id="@+id/explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_48"
+                    android:drawablePadding="@dimen/dip_10"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dip_12"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/line_view" />
+
+            <LinearLayout
+                android:id="@+id/lyt_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="13dp"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:paddingTop="13dp">
+
+                <com.dashihui.afford.ui.widget.WgtGridViewServer
+                    android:id="@+id/wgt_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20dp">
+
+                </com.dashihui.afford.ui.widget.WgtGridViewServer>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/line_view" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fastScrollEnabled="false"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line_view" />
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/itemRLyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageButton
+                    android:id="@+id/left_imgbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_server_life" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageButton
+                        android:id="@+id/right_imgbtnTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home_leisure" />
+                </RelativeLayout>
+
+                <include layout="@layout/line_view" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageButton
+                        android:id="@+id/right_imgbtnBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home_wash" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+        </LinearLayout>
+
+        <include layout="@layout/line_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="vertical">
+
+            <include layout="@layout/line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_0.5"
+                    android:layout_weight="1"
+                    android:background="@color/service_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dip_48"
+                    android:layout_marginLeft="@dimen/dip_8"
+                    android:layout_marginRight="@dimen/dip_8"
+                    android:drawableLeft="@drawable/home_img_recom"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/home_recom"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_0.5"
+                    android:layout_weight="1"
+                    android:background="@color/service_border" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

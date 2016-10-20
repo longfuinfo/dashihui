@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg">
+    <RelativeLayout
+        android:id="@+id/rlty_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:clickable="false"
+        android:background="@drawable/top_bg">
+
+        <ImageButton
+            android:id="@+id/left_back_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/dip_16"
+            android:paddingLeft="@dimen/dip_16"
+            android:paddingRight="@dimen/dip_24"
+            android:paddingTop="@dimen/dip_16"
+            android:src="@drawable/ico_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的钱包"
+            android:textColor="@color/confirmorder_title"
+            android:textSize="@dimen/confirmorder_title"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/what_shihuibi"
+            android:padding="@dimen/dip_16"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_width="@dimen/dip_40"
+            android:layout_height="@dimen/dip_40"
+            android:background="@drawable/nav_mywallet_btn_question"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#343333"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ly_my_shihuibi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_marginBottom="@dimen/dip_20"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/wallet_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dip_40"/>
+            <TextView
+                android:id="@+id/my_shihuibi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:layout_marginLeft="@dimen/dip_3"
+                android:text="实惠币"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/dip_0.5"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="#232222"
+            />
+        <LinearLayout
+            android:id="@+id/ly_my_friend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_marginBottom="@dimen/dip_20"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/friend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0个"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"/>
+            <TextView
+                android:id="@+id/recommend_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_3"
+                android:layout_marginTop="@dimen/dip_5"
+                android:text="推荐的好友"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.dashihui.afford.ui.widget.WdtPagerTab
+        android:id="@+id/apps_fragment_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        app1:pstsDisplayNum="2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/apps_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AtyAppsListFragment" />
+
+</LinearLayout>
