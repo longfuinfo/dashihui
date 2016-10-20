@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div style="margin-top: 100px;">
+			<h1>OC和JavaScript交互的那些事</h1>
+			<input type="button" value="CallCamera" onclick="Toyun.callCamera()" />
+		</div>
+		<div>
+		   <input type="button" value="Share" onclick="callShare()" />
+		</div>
+        <div>
+           <input type = "button" value="personInfo" onclick="Toyun.userInfo()"
+        </div>
+		<script>
+		var callShare = function() {
+			var shareInfo = JSON.stringify({"title":"标题","desc":"内容","shareUrl":"http://www.jianshu.com/p/f896d73c670a"
+			,"shareIcon":"http://upload-images.jianshu.io/upload_images/1192353-fd26211d54aea8a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"});
+			Toyun.share(shareInfo);
+		}
+		var picCallback = function(photos) {
+			alert(photos);
+		}
+		var shareCallback = function(){
+			alert('success');
+		}
+		</script>
+	</body>
+</html>
