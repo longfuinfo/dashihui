@@ -37,7 +37,7 @@
 ## 技术支持
 
 如果想了解这个项目更多信息（协议文档、项目图文介绍）或有什么问题需要反馈我们，请到我们论坛进行留言。
-论坛: [bbs.o2omobile.cn](http://bbs.o2omobile.cn)
+论坛: [bbs.longfuinfo.cn](http://121.42.167.219/forum.php)
 
 
 ## 用户授权协议
