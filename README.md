@@ -2,12 +2,6 @@
 O2OMobile
 ================
 
-
-```
-System.out.println("Hello World!");
-```
-
-
 [O2OMobile](http://www.o2omobile.cn) 是 [GeekZooStudio](http://www.geek-zoo.com) 推出的一款原生开源O2O系统. 能够帮助企业及个人快速构建O2O(线上到线下)服务体系。
 
 * PHP源代码: [https://github.com/GeekZooStudio/O2OMobile_PHP](https://github.com/GeekZooStudio/O2OMobile_PHP)
